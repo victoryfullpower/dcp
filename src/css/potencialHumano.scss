@@ -1,0 +1,776 @@
+@import '../_general.scss';
+
+.img_fila1_PotencialH1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 130px;
+    height: 130px;
+}
+.img_fila1_PotencialH2_cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: -75px;
+}
+.img_fila1_PotencialH2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 130px;
+    height: 130px;
+}
+.cuadro_fila1_1{
+    display: flex;
+    flex-direction:column;
+    max-width: 500px;
+    height: fit-content;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.cuadro_fila1_2{
+    display: flex;
+    flex-direction:column;
+    max-width: 600px;
+    height: fit-content;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.cuadro_fila2_imgsTextos_1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.cuadro_fila2_imgsTextos_2{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-end;
+}
+.cuadro_fila2_imgsTextos_3{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-end;
+}
+
+
+.fila_1_PotencialH{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.TituloPaginaPotencialH{
+    font-size: $font_size_40;
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 700;
+}
+.Cab_fila1_PotencialH{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.texto_fila1_PotencialHv1{
+    display: flex;
+    flex-direction: column;
+    font-size: $font_size_25;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin-top: 70px;
+}
+.texto_fila1_PotencialH{
+    font-size: $font_size_25;
+    font-weight: 400;
+    color: #000;
+    max-width: 600px;
+}
+
+.fila_2_PotencialH{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.cuadros_fila2_PotencialH{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.cuadros_fila2_cuadro_img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.cuadros_fila2_cuadro_img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: -200px;
+}
+.cuadros_fila2_PotencialH_img1{
+    background-image: url('../assets/plantita_left.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+   
+    margin-left: -70px;
+
+}
+.cuadros_fila2_PotencialH_img2{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 199px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+
+.cuadros_fila2_PotencialH_img3{
+    background-image: url('../assets/plantita_left.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+   
+    margin-left: -70px;
+
+}
+.cuadros_fila2_PotencialH_img4{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+.cuadros_fila2_PotencialH_img5{
+    background-image: url('../assets/colaboradores.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 320px;
+    height: 200px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+
+@mixin Funcuadros_fila2_PotencialH($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.cuadros_fila2_PotencialH_1{
+    @include Funcuadros_fila2_PotencialH(290px,500px);
+    z-index: 5;
+}
+.cuadros_fila2_PotencialH_2{
+    @include Funcuadros_fila2_PotencialH(290px,350px);
+    z-index: 1;
+   
+}
+.cuadros_fila2_PotencialH_3{
+    @include Funcuadros_fila2_PotencialH(290px,350px);
+    align-items: flex-end;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+.cuadros_fila2_PotencialH_4{
+    @include Funcuadros_fila2_PotencialH(242px,350px);
+    z-index: 1;
+    margin-top: -70px;
+}
+.cuadros_fila2_PotencialH_5{
+    @include Funcuadros_fila2_PotencialH(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+}
+
+.fila_3_PotencialH{
+    
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00CFB4;
+
+}
+.cuadros_fila3_PotencialH_img2{
+    background-image: url('../assets/cohete.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 500px;
+    z-index: 3;
+   
+    margin-top: 600px;
+}
+@mixin Funcuadros_fila3_PotencialH($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #00CFB4;
+    justify-content: center;
+}
+.cab_fila3_PotencialH_Texto_img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    width: 100%;
+}
+.cuadros_fila3_PotencialH{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.cuadros_fila3_PotencialH_img1{
+    background-image: url('../assets/chicatapaboca.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+
+}
+.fila3_PotencialH_imgcuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%
+}
+.fila3_PotencialH_textcuadro{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 600px;
+    margin-left: 50px;
+    font-size: $font_size_30
+
+}
+.cuadros_fila3_PotencialH_1{
+    @include Funcuadros_fila3_PotencialH(310px,500px);
+    margin-top: 500px;
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 120px 250px;
+    background-position: bottom right;
+}
+.cuadros_fila3_PotencialH_2{
+    @include Funcuadros_fila3_PotencialH(310px,500px);
+    margin-top: 300px;
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+}
+.cuadros_fila3_PotencialH_3{
+    @include Funcuadros_fila3_PotencialH(310px,500px);
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+}
+
+.cuadros_fila3_PotencialH_text{
+    font-size: $font_size_30;
+    margin-left: 100px;
+}
+
+
+
+.fila_4_PotencialH{
+  
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00CFB4;
+ 
+ 
+ }
+ .cuadros_fila4_PotencialH_img2{
+    background-image: url('../assets/cohete.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 500px;
+    z-index: 3;
+    margin-right: -100px;
+    margin-top: 300px;
+ }
+ @mixin Funcuadros_fila4_PotencialH($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #00CFB4;
+    justify-content: center;
+    padding: 0px 10px;
+ }
+ .cab_fila4_PotencialH_Texto_img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    width: 100%;
+ }
+ .cuadros_fila4_PotencialH{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+ }
+ .cuadros_fila4_PotencialH_img1{
+    background-image: url('../assets/chicatapaboca.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+ 
+ 
+ }
+ .fila4_PotencialH_imgcuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%
+ }
+ .fila4_PotencialH_textcuadro{
+ 
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 600px;
+    margin-left: 50px;
+    font-size: $font_size_30
+ 
+ 
+ }
+ .cuadros_fila4_PotencialH_1{
+    @include Funcuadros_fila4_PotencialH(310px,500px);
+    margin-top: 500px;
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 120px 250px;
+    background-position: bottom right;
+ }
+ .cuadros_fila4_PotencialH_2{
+    @include Funcuadros_fila4_PotencialH(310px,500px);
+    margin-top: 320px;
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+ }
+ .cuadros_fila4_PotencialH_3{
+    @include Funcuadros_fila4_PotencialH(310px,500px);
+    margin-top: 150px;
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+ }
+ .cuadros_fila4_PotencialH_4{
+    @include Funcuadros_fila4_PotencialH(310px,500px);
+    background-image: url('../assets/fondo_4.png');
+    background-repeat: no-repeat;
+    background-size: 160px 250px;
+    background-position: bottom right;
+ }
+ 
+ .cuadros_fila4_PotencialH_text{
+    font-size: $font_size_30;
+    margin-left: 100px;
+ }
+ 
+.fila_5_PotencialH{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+ .cuadro_fila5_imgsTextos_1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+ }
+ .cuadro_fila5_imgsTextos_2{
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-end;
+ }
+ .fila_2_PotencialH{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+   
+ }
+ .cuadros_fila5_PotencialH{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+ }
+ .cuadros_fila5_cuadro_img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .cuadros_fila5_cuadro_img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: -200px;
+ }
+ .cuadros_fila5_PotencialH_img1{
+    background-image: url('../assets/plantita_left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+  
+    margin-left: -70px;
+ 
+ 
+ }
+ .cuadros_fila5_PotencialH_img2{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 199px;
+    z-index: 3;
+    margin-right: -70px;
+ 
+ 
+ }
+ 
+ 
+ .cuadros_fila5_PotencialH_img3{
+    background-image: url('../assets/plantita_left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+  
+    margin-left: -70px;
+ 
+ 
+ }
+ .cuadros_fila5_PotencialH_img4{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+    margin-right: -70px;
+ 
+ 
+ }
+ .cuadros_fila5_PotencialH_img5{
+    background-image: url('../assets/Fila2_ilustracion3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 320px;
+    height: 328px;
+    z-index: 3;
+    margin-right: -70px;
+ 
+ 
+ }
+ .cuadros_fila5_PotencialH_img6{
+    background-image: url('../assets/cohete2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 320px;
+    height: 328px;
+    z-index: 3;
+    margin-left: -70px;
+    margin-top: -40px;
+ }
+ 
+ @mixin Funcuadros_fila5_PotencialH($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+ }
+ 
+ 
+ .cuadros_fila5_PotencialH_1{
+    @include Funcuadros_fila5_PotencialH(320px,500px);
+    z-index: 5;
+    background-image: url('../assets/fondoVerde_3.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+ }
+ .cuadros_fila5_PotencialH_2{
+    @include Funcuadros_fila5_PotencialH(320px,350px);
+    z-index: 1;
+    background-image: url('../assets/fondoVerde_1.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+  
+ }
+ .cuadros_fila5_PotencialH_3{
+    @include Funcuadros_fila5_PotencialH(320px,350px);
+    align-items: flex-end;
+    z-index: 1;
+    background-image: url('../assets/fondoVerde_2.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+ }
+ .cuadros_fila5_PotencialH_4{
+    @include Funcuadros_fila5_PotencialH(242px,350px);
+    z-index: 1;
+    margin-top: -70px;
+   
+ }
+ .cuadros_fila5_PotencialH_5{
+    @include Funcuadros_fila5_PotencialH(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+ }
+ .cuadros_fila5_PotencialH_6{
+    @include Funcuadros_fila5_PotencialH(320px,350px);
+    z-index: 1;
+    background-image: url('../assets/fondoVerde_4.png');
+    background-repeat: no-repeat;
+    background-size: 170px 250px;
+    background-position: bottom right;
+    
+ }
+
+ .fila5_PotencialH_textcuadro{
+ 
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 600px;
+    margin-left: 50px;
+    font-size: $font_size_30
+ 
+ 
+ }
+
+
+
+
+
+
+@media (max-width: 767px){
+    .img_fila1_PotencialH1{
+        width: 50px;
+        height: 50px;
+    }
+    .img_fila1_PotencialH2{
+        width: 50px;
+        height: 50px;
+    }
+    .cuadros_fila2_PotencialH_img2{
+        width: 100px;
+        margin-right: 0px;
+    }
+    .cuadros_fila2_PotencialH_img1{
+        width: 100px;
+        margin-left: 0px;
+    }
+    .cuadros_fila2_PotencialH_img3{
+        width: 100px;
+        margin-left: 0px;
+    }
+    .cuadros_fila2_PotencialH_img4{
+        width: 100px;
+        margin-right: 0px;
+    }
+    .cuadros_fila4_PotencialH_img2{
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .cuadros_fila3_PotencialH_img2{
+        margin-top: 0px;
+    }
+    .fila_3_PotencialH{
+        background-size: contain;
+        margin-top: 100px;
+    }
+    .cuadros_fila3_PotencialH_1{
+        margin-top: 100px;
+    }
+    .fila3_PotencialH_textcuadro{
+        margin-left: 10px;
+    }
+    .fila_4_PotencialH{
+        background-size: contain;
+    }
+   
+    .fila4_PotencialH_textcuadro{
+        margin-left: 10px;
+    }
+    .cab_fila4_PotencialH_Texto_img{
+        margin-top: 100px;
+    }
+    .cuadros_fila4_PotencialH_1{
+        margin-top: 0px;
+    }
+    .cuadros_fila4_PotencialH_2{
+        margin-top: 50px;
+    }
+    .cuadros_fila4_PotencialH_3{
+        margin-top: 50px;
+    }
+    .cuadros_fila4_PotencialH_4{
+        margin-top: 40px;
+    }
+    .cuadros_fila5_PotencialH{
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .cuadros_fila3_PotencialH_2{
+        margin-top: 0px;
+    }
+    .cuadros_fila3_PotencialH_1{
+        margin-top: 0px;
+    }
+    .cab_fila3_PotencialH_Texto_img{
+        margin-top: 100px;
+    }
+    .cuadros_fila2_PotencialH_3{
+        margin-bottom: 100px;
+    }
+    
+}
+@media (min-width: 768px){
+    .fila_3_PotencialH{
+        background-size: contain;
+        margin-top: 50px;
+    }
+    .fila_4_PotencialH{
+        background-size: contain;
+        margin-top: 50px;
+    }
+}
+@media (min-width: 1024px){
+    .fila_3_PotencialH{
+        background-size: contain;
+        margin-top: 50px;
+    }
+    .fila_4_PotencialH{
+        background-size: contain;
+        margin-top: 50px;
+    }
+}
+@media (min-width: 1200px){
+    .fila_3_PotencialH{
+        background-size: contain;
+        margin-top: 0px;
+    }
+    .fila_4_PotencialH{
+        background-size: contain;
+        margin-top: 0px;
+    }
+}

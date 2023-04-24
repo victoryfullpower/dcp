@@ -1,0 +1,905 @@
+@import '../_general.scss';
+
+.Cab_fila1_nosotros_mision_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 50px;
+}
+.Cab_fila1_nosotros_mision_text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    max-width: 600px;
+    padding: 10px;
+}
+.Cab_fila1_nosotros_mision_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Cab_fila1_nosotros_mision_img2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;  
+    margin-left: -150px;
+    margin-top: -50px;
+}
+.fila_1_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.TituloPaginanosotros{
+    font-size: $font_size_40;
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 700;
+    max-width: 1050px;
+}
+.Cab_fila1_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color: #00CFB4;
+}
+.texto_fila1_nosotrosv1{
+    width: 100%;
+}
+.texto_fila1_nosotros{
+    font-size: $font_size_25;
+    font-weight: bold;
+    color: #000;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.img_fila1_nosotros1{
+    background-image: url('../assets/chicoPerfil2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 250px;
+}
+.img_fila1_nosotros2{
+    background-image: url('../assets/chicaPerfil.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 260px;
+}
+
+.fila_2_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cuadros_fila2_nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.cuadros_fila2_cuadro_img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.cuadros_fila2_cuadro_img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cuadros_fila2_nosotros_img1{
+    background-image: url('../assets/estrecharManos.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 240px;
+    height: 344px;
+    z-index: 3;
+   
+    margin-top: 9px;
+
+}
+.cuadros_fila2_nosotros_img2{
+    background-image: url('../assets/chica_chico.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 236px;
+    height: 290px;
+    z-index: 3;
+}
+
+@mixin Funcuadros_fila2_nosotros($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
+
+.cuadros_fila2_nosotros_1{
+    @include Funcuadros_fila2_nosotros(242px,280px);
+    z-index: 1;
+}
+.cuadros_fila2_nosotros_2{
+    @include Funcuadros_fila2_nosotros(242px,350px);
+    z-index: 1;
+    margin-top: -349px;
+}
+.cuadros_fila2_nosotros_3{
+    @include Funcuadros_fila2_nosotros(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+}
+.cuadros_fila2_nosotros_4{
+    @include Funcuadros_fila2_nosotros(242px,350px);
+    z-index: 1;
+    margin-top: -70px;
+}
+.cuadros_fila2_nosotros_5{
+    @include Funcuadros_fila2_nosotros(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+}
+
+.fila_3_nosotros{
+    
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00CFB4;
+
+}
+.cuadros_fila3_nosotros_img2{
+    background-image: url('../assets/plantita.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+    z-index: 3;
+    margin-top: 400px;
+    margin-right: -90px;
+}
+@mixin Funcuadros_fila3_nosotros($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #00CFB4;
+    justify-content: center;
+}
+.cab_fila3_nosotros_Texto_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+.cuadros_fila3_nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.cuadros_fila3_nosotros_img1{
+    background-image: url('../assets/chicatapaboca.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+
+}
+.fila3_nosotros_imgcuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%
+}
+.fila3_nosotros_textcuadro{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.cuadros_titulo_fila3_1{
+    font-size: $font_size_30;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_2{
+    font-size: $font_size_30;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_3{
+    font-size: $font_size_30;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_4{
+    font-size: $font_size_30;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_1_1{
+    font-size: $font_size_23;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_1_2{
+    font-size: $font_size_23;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_1_3{
+    font-size: $font_size_23;
+    margin-top: 20px;
+}
+.cuadros_titulo_fila3_1_4{
+    font-size: $font_size_23;
+    margin-top: 20px;
+}
+.nosotros_fila3_circle_1 {
+    background-image: url('../assets/balance.svg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    margin-top: -160px;
+}
+.nosotros_fila3_circle_2 {
+    background-image: url('../assets/hug.svg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    margin-top: -280px;
+}
+.nosotros_fila3_circle_3 {
+    background-image: url('../assets/handshake.svg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    margin-top: -250px;
+}
+.nosotros_fila3_circle_4 {
+    background-image: url('../assets/heart.svg');
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    margin-top: -140px;
+}
+.circle_img_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cuadros_fila3_nosotros_1{
+    @include Funcuadros_fila3_nosotros(320px,450px);
+    padding: 10px;
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 80px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_nosotros_2{
+    @include Funcuadros_fila3_nosotros(320px,550px);
+    padding: 10px;
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 120px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_nosotros_3{
+    @include Funcuadros_fila3_nosotros(320px,550px);
+    padding: 10px;
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 120px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_nosotros_4{
+    @include Funcuadros_fila3_nosotros(320px,450px);
+    padding: 10px;
+    background-image: url('../assets/fondo_4.png');
+    background-repeat: no-repeat;
+    background-size: 120px 150px;
+    background-position: bottom right;
+}
+
+.cuadros_fila3_nosotros_text{
+    font-size: $font_size_30;
+    margin-left: 100px;
+}
+
+.fila_4_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.fila4_titulo{
+    font-size: $font_size_30;
+    color: #00CFB4;
+    margin-top: 50px;
+}
+.nosotros_fila4_listaCuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.nosotros_fila4_lista1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nosotros_fila4_lista2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@mixin Funcuadros_fila4_nosotros($width, $height) {
+    display: flex;
+    flex-direction:row;
+    width: $width;
+    height: $height;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.nosotros_fila4_cuadro1_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+}
+.nosotros_fila4_cuadro1_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 30px;
+    height: 30px;
+}
+.nosotros_fila4_main_cuadro_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.nosotros_fila4_circle_1{
+    background-image: url('../assets/viky.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.nosotros_fila4_text{
+    color: #000;
+    font-size: $font_size
+}
+.nosotros_fila4_cuadro1{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro2{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro3{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro4{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro5{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro6{
+    @include Funcuadros_fila4_nosotros(420px,380px);
+    padding: 10px;
+}
+.nosotros_fila4_cuadro1_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+}
+.nosotros_fila4_cuadro1_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+}
+.nosotros_fila4_cuadro7{
+    @include Funcuadros_fila3_nosotros(420px,380px);
+    padding: 10px;
+}
+/* fila 4 cuadro 2  */
+.nosotros_fila4_cuadro2_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.nosotros_fila4_cuadro2_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.nosotros_fila4_cuadro2_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+}
+.nosotros_fila4_main_cuadro_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.nosotros_fila4_circle_2{
+    background-image: url('../assets/ricardo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+}
+.nosotros_fila4_cuadro2_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+}
+.nosotros_fila4_cuadro2_text{
+    margin-top: 10px;
+}
+/* fin cuadro 2 */
+
+/* fila 4 cuadro 3  */
+.nosotros_fila4_cuadro3_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.nosotros_fila4_cuadro3_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+.nosotros_fila4_cuadro3_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+}
+.nosotros_fila4_main_cuadro_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.nosotros_fila4_circle_3{
+    background-image: url('../assets/fatima.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+}
+.nosotros_fila4_cuadro3_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+}
+.nosotros_fila4_cuadro3_text{
+    margin-top: 10px;
+}
+/* fin cuadro 3 */
+
+
+/* fila 4 cuadro 4  */
+.nosotros_fila4_cuadro4_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro4_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro4_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+ }
+ .nosotros_fila4_main_cuadro_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+ }
+ .nosotros_fila4_circle_4{
+    background-image: url('../assets/lucero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+ }
+ .nosotros_fila4_cuadro4_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+ }
+ .nosotros_fila4_cuadro4_text{
+    margin-top: 10px;
+ }
+ /* fin cuadro 4 */
+
+ /* fila 4 cuadro 5  */
+.nosotros_fila4_cuadro5_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro5_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro5_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+ }
+ .nosotros_fila4_main_cuadro_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+ }
+ .nosotros_fila4_circle_5{
+    background-image: url('../assets/sofia.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+ }
+ .nosotros_fila4_cuadro5_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+ }
+ .nosotros_fila4_cuadro5_text{
+    margin-top: 10px;
+ }
+/* fin cuadro 5 */ 
+
+/* fila 4 cuadro 6  */
+.nosotros_fila4_cuadro6_recuadro1{
+    background-image: url('../assets/recuadro1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro6_recuadro2{
+    background-image: url('../assets/recuadro2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+ }
+ .nosotros_fila4_cuadro6_cover_recuadro2_1{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start
+ }
+ .nosotros_fila4_main_cuadro_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+ }
+ .nosotros_fila4_circle_6{
+    background-image: url('../assets/luis.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+ }
+ .nosotros_fila4_cuadro6_cover_recuadro2_2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-end
+ }
+ .nosotros_fila4_cuadro6_text{
+    margin-top: 10px;
+ }
+ /* fin cuadro 6 */
+ 
+
+
+ /* fila 5 */
+ 
+.fila_5_nosotros {
+   
+    display: flex;
+    background-image: url("../assets/fondoEquipo.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #00CFB4;
+}
+.nosotros_fila5_titulo{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+.nosotros_fila5_text{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nosotros_fila5_img1{
+    background-image: url('../assets/cola_avion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: -200px;
+}
+.nosotros_fila5_img2{
+    background-image: url(/src/assets/avion.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 340px;
+    height: 250px;
+    background-position: center center;
+    margin-top: -480px;
+    margin-right: -240px;
+}
+.nosotros_fila5_text_1{
+    max-width: 1000px;
+    font-size: 40px;
+}
+ /* fin fila 5 */
+
+
+
+
+ 
+ 
+
+@media (max-width: 767px){
+    .Cab_fila1_nosotros_mision_text{
+        max-width: 200px;
+    }
+    .Cab_fila1_nosotros_mision_text2{
+        max-width: 200px;
+    }
+    .Cab_fila1_nosotros_mision_img2{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .texto_fila1_nosotros{
+        margin-left: 5px;
+    }
+    .nosotros_fila4_cuadro1{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila4_cuadro2{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila4_cuadro3{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila4_cuadro4{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila4_cuadro5{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila4_cuadro6{
+        width: 360px;
+        height: 450px;
+    }
+    .nosotros_fila5_img2{
+        width: 0px;
+    }
+    .fila_3_nosotros{
+        background-size: contain;
+    }
+    .fila_5_nosotros{
+        background-size: contain;
+    }
+}
+@media (min-width: 768px){
+    .nosotros_fila5_img2{
+        width: 0px;
+    }
+    .fila_3_nosotros{
+        background-size: contain;
+    }
+    .fila_5_nosotros{
+        background-size: contain;
+    }
+}
+@media (min-width: 1024px){
+    .nosotros_fila5_img2{
+        width: 0px;
+    }
+    .fila_3_nosotros{
+        background-size: cover;
+    }
+    .fila_5_nosotros{
+        background-size: cover;
+    }
+}
+@media (min-width: 1200px){
+    .nosotros_fila5_img2{
+        width: 340px;
+    }
+    .fila_3_nosotros{
+        background-size: cover;
+    }
+    .fila_5_nosotros{
+        background-size: cover;
+    }
+}

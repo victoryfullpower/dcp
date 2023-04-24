@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+   
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+
+    
+    <script src="https://checkout.culqi.com/js/v4"></script>
+    <script>
+      Culqi.publicKey = 'pk_live_e7829ec2a9e31592';
+    </script>
+    
+    <script>
+      Culqi.options({
+        lang: "auto",
+        installments: false, // Habilitar o deshabilitar el campo de cuotas
+        paymentMethods: {
+          tarjeta: true,
+          yape: false, 
+          bancaMovil: true,
+          agente: true,
+          billetera: true,
+          cuotealo: true,
+        },
+      });
+    </script>
+    <script>
+      Culqi.options({
+          style: {
+           
+            bannerColor: '', // hexadecimal
+            buttonBackground: '', // hexadecimal
+            menuColor: '', // hexadecimal
+            linksColor: '', // hexadecimal
+            buttonText: '', // texto que tomará el botón
+            buttonTextColor: '', // hexadecimal
+            priceColor: '' // hexadecimal
+          }
+      });
+    </script>
+    
+    <!-- <script>
+      const btn_pagar = document.getElementById('btn_pagar');
+    
+      btn_pagar.addEventListener('click', function (e) {
+          // Abre el formulario con la configuración en Culqi.settings y CulqiOptions
+          Culqi.open();
+          e.preventDefault();
+      })
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,32 @@
+@import '_general.scss';
+@font-face {
+  font-family: NoirProBold;
+  src: url(/NoirPro-Bold.otf);
+}
+.NoirProBold{
+  font-family: NoirProBold;
+}
+
+@font-face {
+  font-family: NoirProLight;
+  src: url(/NoirPro-Light.otf);
+}
+.NoirProLight{
+  font-family: NoirProLight;
+}
+
+@font-face {
+  font-family: NoirProRegular;
+  src: url(/NoirPro-Regular.otf);
+}
+.NoirProRegular{
+  font-family: NoirProRegular;
+}
+
+@font-face {
+  font-family: NoirProSemiBold;
+  src: url(/NoirPro-SemiBold.otf);
+}
+.NoirProSemiBold{
+  font-family: NoirProSemiBold;
+}

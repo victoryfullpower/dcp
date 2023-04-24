@@ -1,0 +1,402 @@
+@import '../_general.scss';
+.main1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main1::before {    
+    content: "";
+    background-image: url("../assets/fontoMetodologiaCuadros.png");
+    background-size: 2000px 1000px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.10;
+    background-position: center top;
+    
+}
+.main2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.covermain2{
+    display: flex;
+    flex-direction: column;
+}
+.Asociados{
+  max-width: 870px;
+  height: 288px;
+  z-index: 2;
+  font-size: $font_size_40;
+  background: linear-gradient(265.15deg, #00CFB4 8.62%, #FFFFFF 104.96%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px gray;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.coverAsociados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contentDescrpRow4{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.figura-rara {
+    background-color: #00CFB4;
+    height: 200px;
+    clip-path: path("M 0.997681 45.0791 C 205.26 -149.554 1323.46 369.103 1715 45.0791 V 1045.5 H 0.997681 V 45.0791 Z");
+  }
+.elección{
+    font-size: $font_size_50;
+    color: #fff;
+    margin-top: 270px;
+    text-align: center;
+}
+.Buscamos{
+    font-size: $font_size_30;
+    color:#000;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.Soluciones{
+    font-size: $font_size_60;
+    color: #00CFB4;
+    text-align: center;
+    max-width: 1000px;
+}
+.mostramos{
+    font-size: $font_size_50;
+    color: #000;
+    text-align: center;
+    max-width: 1000px;
+}
+.listadoCuadros_metodologia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.home_medologia{
+    font-size: $font_size;
+    cursor: pointer;
+}
+.miga_metodologia{
+    font-size: $font_size;
+    cursor: pointer;
+}
+@mixin cuadros($height,$width) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    align-items: center;
+     
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    
+}
+.cuadro1{
+    @include cuadros(482px,250px);
+    
+    background-image: url('../assets/fondoVerde_1.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+
+}
+.cuadro2{
+    @include cuadros(651px,250px);
+    background-image: url('../assets/fondoVerde_2.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+}
+.cuadro3{
+    @include cuadros(651px,250px);
+    background-image: url('../assets/fondoVerde_3.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+}
+.cuadro4{
+    @include cuadros(482px,250px);
+    
+    background-image: url('../assets/fondoVerde_4.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+
+}
+
+
+@mixin cajasMetodologia($height,$width) {
+  
+     
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 15px gray;
+
+
+}
+.listadoCajasMetodologia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+    color: #00CFB4;
+    font-size: $font_size;
+}
+.caja1Metodologia{
+    @include cajasMetodologia(200px,200px);
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.caja2Metodologia{
+    @include cajasMetodologia(280px,200px);
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.caja3Metodologia{
+    @include cajasMetodologia(382px,200px);
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+
+.caja6Metodologia{
+    @include cajasMetodologia(200px,200px);
+    background-image: url('../assets/fondo_6.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.caja5Metodologia{
+    @include cajasMetodologia(280px,200px);
+    background-image: url('../assets/fondo_5.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.caja4Metodologia{
+    @include cajasMetodologia(382px,200px);
+    background-image: url('../assets/fondo_4.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.titulo_metodologia{
+    font-size: $font_size_25;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.cuerpo_metodologia{
+    font-size: $font_size_23;
+    font-family: NoirProRegular;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-family: NoirProSemiBold;
+    color: #fff;
+}
+.row4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    font-family: NoirProSemiBold;
+    color: #fff;
+}
+.listadoLogos{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    margin-top: 90px;
+}
+
+.Logo1{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/techstart.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.Logo2{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/orderly.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 1;
+    margin-left: -50px;
+    border-radius: 10px;
+    margin-top: -50px;
+}
+.Logo3{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/project.png");
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 4;
+    background-color: #fff;
+    margin-left: -50px;
+    bottom: -50px;
+    border-radius: 10px;
+}
+.Logo4{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/rewards.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 3;
+    background-color: #fff;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 10px;
+}
+.Logo5{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/buyers.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    position:relative;
+    z-index: 5;
+    background-color: #fff;
+    margin-left: -50px;
+    bottom: -50px;
+    border-radius: 10px;
+}
+
+.Logo6{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/food.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 6;
+    background-color: #fff;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 10px;
+}
+.Logo7{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/2ulaundry.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    position:relative;
+    z-index: 6;
+    background-color: #fff;
+    margin-left: -50px;
+    bottom: -50px;
+    border-radius: 10px;
+}
+.Logo8{
+    width: 202px;
+    height: 134px;
+    background-image: url("../assets/inside.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px gray;
+    z-index: 7;
+    background-color: #fff;
+    margin-left: -50px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+.organizacionalez{
+    font-size: $font_size_30;
+    color: #000;
+    max-width: 340px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+.logosOrganizacionales{
+display: inline;   
+
+}

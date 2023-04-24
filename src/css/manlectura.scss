@@ -1,0 +1,79 @@
+.table{
+    width: auto;
+}
+.mantenedor{
+    display: flex;
+    flex-direction: column;
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+   
+    gap: 10px;
+}
+.mantelectura_cover_input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.classinput{
+    width: 681px;
+    font-size: 18px;
+    background-color: white;
+    /* padding: 14px 32px 14px 16px; */
+    border-radius: 10px;
+    border: 2px solid #00CFB4;
+    outline: none;
+}
+.cssabel{
+    width: 100px;
+    color: #000;
+    font-size: 15px;
+}
+.classinput2{
+    width: 300px;
+    font-size: 18px;
+    background-color: white;
+    /* padding: 14px 32px 14px 16px; */
+    border-radius: 10px;
+    border: 2px solid #00CFB4;
+    outline: none;
+}
+.cssabel2{
+    margin-left: 10px;
+    width: 100px;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+.mantelectura_cover_input2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mantelectura_cover_input3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+}
+.classinput3{
+    margin-left: 10px;
+    width: 200px;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+/* .modal {
+    --bs-modal-width: 0px;
+}
+.modal-content{
+    width: 800px;
+} */
+
+.menuMante{
+    display: flex;
+}

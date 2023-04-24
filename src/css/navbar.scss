@@ -1,0 +1,100 @@
+@import '../_general.scss';
+.bg-nav{
+    background-color: #FFFFFF;
+   
+  }
+  
+  .content{
+    padding: 12px;
+    height: 3000px;
+  }
+  
+  .coloring{
+    color: black;
+  }
+  .boton{
+  
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #00CFB4;
+  
+    margin-top: 9px;
+    margin-left: 30px;
+    font-size: $font_size;
+  }
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  .navbar { margin-bottom: 0 }
+
+  .nav-link {
+    font-size: $font_size;
+  }
+  .navbar {
+    --bs-navbar-active-color: #00CFB4;
+  }
+  .navbarBordebottom{
+    border-bottom: 0.15rem solid #00CFB4;
+  }
+  
+  .navbar-nav {
+    --bs-nav-link-color: #000000;
+    --bs-nav-link-hover-color: #00CFB4;
+  }
+  .dropdown-menu {
+    --bs-dropdown-border-radius:0;
+    --bs-dropdown-bg:#00CFB4
+  }
+
+
+
+
+  @media (min-width: 768px){
+    .container-md, .container-sm, .container {
+        max-width: 2000px;
+    }
+   
+
+  }
+  @media (min-width: 992px){
+    .container-lg, .container-md, .container-sm, .container {
+        max-width: 2000px;
+    }
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+        gap: 0rem;
+    }
+    .nav-link {
+        font-size: $font_size_15;
+    }
+
+  }
+
+  @media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 2000px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 0rem;
+    }
+    .nav-link {
+        font-size: $font_size_15;
+    }
+  }
+
+  @media (min-width: 1400px){
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 2000px;
+    }
+    .nav-link {
+        font-size: $font_size;
+    }
+  } 
+  @media (min-width: 576px){
+   
+   
+  }

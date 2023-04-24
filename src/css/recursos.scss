@@ -1,0 +1,286 @@
+@import '../_general.scss';
+
+/* fila 1 */
+.fila_1_recurso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fila1_recurso_titulo{
+    font-size: $font_size_40;
+    color:#00CFB4;
+    font-weight: 700;
+    max-width: 780px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fila1_recurso_tituloVideos{
+    font-size: 23px;
+    color:#00CFB4;
+    font-weight: 700;
+    max-width: 780px;
+}
+
+.fila1_recurso_text1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: $font_size_23;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.fila1_recurso_lista_videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.fila1_recurso_video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 360px;
+    border: 2px solid #00CFB4;
+    background-color: #fff;
+}
+.fila1_recurso_img{
+    background-image: url('../assets/recurso.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 360px;
+    height: 300px;
+}
+
+.fila1_recurso_detalle{
+    font-size: $font_size_18;
+    color: #000;
+    padding: 10px 0px;
+    max-width: 300px;
+}
+.fila1_recurso_boton{
+  
+    color: #fff;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    background-color: #00CFB4;
+  
+    padding: 12px 5px;
+    font-size: $font_size_23;
+    text-align: center;
+  
+}
+.fila1_recurso_cover_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.fila1_recurso_cover_detalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0px 20px;
+}
+/* fin fila 1 */
+
+/* fila 2 */
+.fila_2_recurso{
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #00CFB4;
+    margin-top: 50px;
+}
+
+.fila2_recurso_boton {
+    color: #00CFB4;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #00CFB4;
+    padding: 12px 5px;
+    font-size: $font_size_23;
+    text-align: center;
+}
+.fila2_recurso_text1{
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    width: 100%;
+    font-size: $font_size_23;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.fila2_recuerso_encuentraMas{
+    color: #000;
+    font-size: $font_size_15;
+    text-decoration: underline;
+    margin-right: 200px;
+}
+.fila2_recurso_arrow{
+    background-image: url('../assets/arrow_white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 35px;
+    height: 20px;
+}
+.fila2_recurso_text_arrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: $font_size_15;
+    text-decoration: underline;
+    color: #fff;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+.fila2_recurso_arrow_cover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fila2_recurso_text_arrow_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* fin fila 2 */
+
+
+
+@media (max-width: 767px){
+    .fila_2_recurso{
+        background-size: contain;
+    }
+    .fila2_recurso_text_arrow_center{
+        margin-left: 0px;
+    }
+    .fila2_recurso_text_arrow{
+        margin-right: 0px;
+    }
+    .fila2_recuerso_encuentraMas{
+        margin-right: 10px;
+        margin-top: -60px;
+    }
+    .fila2_recurso_text1{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px){
+    .fila_2_recurso{
+        background-size: contain;
+    }
+    .fila2_recurso_text_arrow_center{
+        margin-left: 0px;
+    }
+    .fila2_recurso_text_arrow{
+        margin-right: 0px;
+    }
+    .fila2_recuerso_encuentraMas{
+        margin-right: 10px;
+        margin-top: -60px;
+    }
+    .fila2_recurso_text1{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1024px){
+    .fila_2_recurso{
+        background-size: cover;
+    }
+    .fila2_recurso_text_arrow_center{
+        margin-left: 200px;
+    }
+    .fila2_recurso_text_arrow{
+        margin-right: 200px;
+    }
+    .fila2_recuerso_encuentraMas{
+        margin-right: 200px;
+        margin-top: 0px;
+    }
+    .fila2_recurso_text1{
+        margin-bottom: 100px;
+    }
+}
+@media (min-width: 1200px){
+    .fila_2_recurso{
+        background-size: cover;
+    }
+    .fila2_recurso_text_arrow_center{
+        margin-left: 200px;
+
+    }
+    .fila2_recurso_text_arrow{
+        margin-right: 200px;
+    }
+    .fila2_recuerso_encuentraMas{
+        margin-right: 200px;
+        margin-top: 0px;
+    }
+    .fila2_recurso_text1{
+        margin-bottom: 100px;
+    }
+}
+
+.elaboradopor{
+   
+    display: flex;
+    color: #000;
+    flex-direction: row;
+    width: 100%;
+    font-size: $font_size_23;
+    margin-left: 60px;
+    margin-top: 50px;
+
+}
+.fila_2_recurso_detalle{
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.fecha{
+    font-size: $font_size_23; 
+    margin-left:60px;
+    margin-bottom: 20px;
+}
+.fila1_recurso_text1_video{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: $font_size_23;
+    justify-content: center;
+    margin-bottom: 50px;
+}

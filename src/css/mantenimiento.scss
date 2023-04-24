@@ -1,0 +1,46 @@
+
+@import '../_general.scss';
+.mantenimiento_segundoCuadro{
+    background-color: #00CFB4;
+    min-height: 880px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.mantenimiento_segundoCuadro::before {    
+    content: "";
+    background-image: url("../assets/fondo_2_inicio.jpeg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.10;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+}
+.contentDescrp2_mantenimiento{
+    max-width: 1423px;
+    padding: 0px 50px;
+}
+.titulo_segundoCuadro_mantenimiento{
+    max-width: 1423px;
+    font-size: $font_size_60;
+    color: #FFF8F8;
+    margin-top: 270px;
+    text-align: center;
+}
+.botonConvemos{
+    background-color: #fff;
+    color: #00CFB4;
+    padding: 10px;
+    border: 2px solid #FAFAFA;
+    border-radius: 10px;
+    width: fit-content;
+    z-index: 100;
+    margin-top: 50px;
+}

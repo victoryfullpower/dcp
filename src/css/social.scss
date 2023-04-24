@@ -1,0 +1,437 @@
+@import '../_general.scss';
+
+
+/* fila 1 */
+.fila_1_social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fila1_social_titulo{
+    font-size: $font_size_40;
+    color:#00CFB4;
+    font-weight: 700;
+    max-width: 780px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fila1_social_descripcion{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 780px;
+    color: #000;
+    font-size: $font_size_27;
+}
+/* fin fila 5 */
+
+/* fila 2 */
+.fila_2_social {
+   
+    display: flex;
+    background-image: url("../assets/fondoEquipo.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: #00CFB4;
+}
+.social_fila2_titulo{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+.social_fila2_text{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social_fila2_img1{
+    background-image: url('../assets/cola_avion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: -200px;
+}
+.social_fila2_img2{
+    background-image: url(/src/assets/avion.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 340px;
+    height: 250px;
+    background-position: center center;
+    margin-top: -480px;
+    margin-right: -240px;
+}
+.social_fila2_text_1{
+    max-width: 1000px;
+    font-size: 40px;
+    font-size: $font_size_30;
+    margin-top: 220px;
+}
+
+/* fin fila 2 */
+
+/* fila 3 */
+.fila_3_social{
+    font-size: 40px;
+    color: #00CFB4;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.fila3_social_img{
+    background-image: url('../assets/vid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100px;
+    height: 100px;
+
+}
+.fila3_social_titulo{
+    max-width: 800px;
+}
+/* fin fila 3 */
+
+/* fila 4 */
+
+/* fila 4 */
+.fila_4_social {
+   
+    display: flex;
+    background-image: url("../assets/fondoVerde.svg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #D9D9D9;
+}
+.social_fila4_titulo{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+.social_fila4_text{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social_fila4_img1{
+    background-image: url('../assets/cola_avion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: -200px;
+}
+.social_fila4_img2{
+    background-image: url(/src/assets/avion.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 340px;
+    height: 250px;
+    background-position: center center;
+    margin-top: -280px;
+    margin-right: -240px;
+}
+.social_fila4_text_1{
+    max-width: 1000px;
+    font-size: 40px;
+    font-size: $font_size_40;
+    margin-top: 220px;
+}
+
+/* fin fila 4 */
+
+/* fila 5 */
+
+.fila5_social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fila5_social_cuadro1{
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    height: 400px;
+    background-color: #00CFB4;
+    border-radius: 20px;
+    color: #fff;
+    border-style: solid;
+    border: 2px solid rgba(0, 207, 180, 0.05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    font-size: $font_size_40;
+    font-weight: bold;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila5_postulate_cover_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.fila5_postulate_botonCorreo{
+  
+    color: #00CFB4;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #F1F9FF;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: $font_size_15;
+    padding: 15px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.fila5_social_text{
+    font-size: $font_size;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 40px;
+}
+.fila5_social_texto1{
+    font-size: $font_size_30;
+    color: #00CFB4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.fila5_social_cuadro1_porcentaje{
+    display:flex;
+    flex-direction: row;
+
+}
+.fila5_social_cuadro1_asociados{
+    max-width: 300px;
+}
+.fila5_social_cuadro1_numero_porcentaje{
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  line-height: 65px;
+}
+.fila5_social_cuadro1_elde{
+    max-width: 50px;
+    line-height: 35px;
+}
+.fila5_social_cuadro1_Ingresos{
+    line-height: 35px;
+}
+/* fin 5 */
+
+
+/* fila 6 */
+.fila_6_social {
+   
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #00CFB4;
+}
+.social_fila6_titulo{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+}
+.social_fila6_text{
+    font-size: $font_size_50;
+    color: #fff;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.social_fila6_img1{
+    background-image: url('../assets/cola_avion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 250px;
+    margin-top: -50px;
+    margin-left: -200px;
+}
+.social_fila6_img2{
+    background-image: url(/src/assets/avion.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 340px;
+    height: 250px;
+    background-position: center center;
+    margin-top: -280px;
+    margin-right: -240px;
+}
+.social_fila6_text_1{
+    max-width: 1000px;
+    font-size: 40px;
+    font-size: $font_size_40;
+    margin-top: 220px;
+}
+.fila6_postulate_cover_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fila6_postulate_botonCorreo{
+  
+    color: #00CFB4;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #F1F9FF;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: $font_size_15;
+    padding: 15px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* fin fila 6 */
+
+.donacion_formulario{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+@media (max-width: 767px){
+    .social_fila2_img2{
+        width: 0px;
+    }
+    .social_fila6_img2{
+        width: 0px;
+    }
+    .social_fila4_img2{
+        width: 0px;
+    }
+    .fila_6_social{
+        background-size: contain;
+    }
+    .fila_4_social{
+        background-size: contain;
+    }
+    .fila_2_social{
+        background-size: contain;
+    }
+}
+@media (min-width: 768px){
+    .social_fila2_img2{
+        width: 0px;
+    }
+    .social_fila6_img2{
+        width: 0px;
+    }
+    .social_fila4_img2{
+        width: 0px;
+    }
+    .fila_6_social{
+        background-size: contain;
+    }
+    .fila_4_social{
+        background-size: contain;
+    }
+    .fila_2_social{
+        background-size: contain;
+    }
+}
+@media (min-width: 1024px){
+    .social_fila2_img2{
+        width: 340px;
+    }
+    .social_fila6_img2{
+        width: 340px;
+    }
+    .social_fila4_img2{
+        width: 340px;
+    }
+    .fila_6_social{
+        background-size: cover;
+    }
+    .fila_4_social{
+        background-size: cover;
+    }
+    .fila_2_social{
+        background-size: cover;
+    }
+}
+@media (min-width: 1200px){
+    .social_fila2_img2{
+        width: 340px;
+    }
+    .social_fila6_img2{
+        width: 340px;
+    }
+    .social_fila4_img2{
+        width: 340px;
+    }
+    .fila_6_social{
+        background-size: cover;
+    }
+    .fila_4_social{
+        background-size: cover;
+    }
+    .fila_2_social{
+        background-size: cover;
+    }
+}

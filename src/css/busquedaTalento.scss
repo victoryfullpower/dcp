@@ -1,0 +1,587 @@
+@import '../_general.scss';
+
+.imagenTitulo {
+    background-color: #fff;
+    background-image: url('../assets/ilustracionTituloBusqueda.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 341px;
+    height: 345px;
+}
+
+.TituloPagina {
+    font-size: $font_size_60;
+    color: #00CFB4;
+}
+
+.SubTituloPagina {
+    font-size: $font_size_27;
+    max-width: 700px;
+    margin-top: 100px;
+}
+
+.tituloSubtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bloque_Cabecera_busqueda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clickSubtitulo {
+    color: #00CFB4;
+    cursor: pointer;
+}
+
+.Bloque_garantizamos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.garantizamos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.SubTituloGarantizamos {
+    font-size: $font_size_27;
+    margin-bottom: 120px;
+}
+
+.imagen_Garantizamos {
+    background-color: #fff;
+    background-image: url('../assets/ilustracion_Garantizamos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 321px;
+    height: 292px;
+}
+
+.Cuadros_Garantizamos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@mixin cuadroGarantizamos($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_27;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    
+
+}
+.cuadroGarantizamos_1 {
+    @include cuadroGarantizamos(222px,193px)
+}
+
+.cuadroGarantizamos_2 {
+    @include cuadroGarantizamos(268px,252px)
+}
+
+.cuadroGarantizamos_3 {
+    @include cuadroGarantizamos(240px,193px)
+}
+
+
+
+
+.Bloque_AsociadoEstrella {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.AsociadoEstrella {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.SubTituloAsociadoEstrella{
+    font-size: $font_size_27;
+    margin-bottom: 120px;
+}
+
+.imagen_AsociadoEstrella {
+    background-color: #fff;
+    background-image: url('../assets/asociadoEstrella.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 321px;
+    height: 292px;
+}
+
+.Cuadros_AsociadoEstrella {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+@mixin cuadroAsociadoEstrella($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_27;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
+.cuadroAsociadoEstrella_1 {
+    @include cuadroGarantizamos(222px,193px)
+}
+
+.cuadroAsociadoEstrella_2 {
+    @include cuadroGarantizamos(268px,252px)
+}
+
+.cuadroAsociadoEstrella_3 {
+    @include cuadroGarantizamos(240px,193px)
+}
+.fila_2{
+    
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #00CFB4;
+    
+
+}
+.tituloPerfiles{
+    font-size: $font_size_40;
+    color: #fff;
+    max-width: 500px;
+}
+.Ilustracion_estrecharManos{
+   
+    background-image: url('../assets/estrecharManos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 453px;
+    height: 761px;
+}
+.BloquePerfiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+.cuadrosPerfiles{
+   display: flex;
+   flex-direction: row;
+   color: #00CFB4;
+   margin-top: 600px;
+   align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@mixin cuadrosPerfilesMix($width, $height) {
+    display: flex;
+    flex-direction:column;
+   
+    height: $height;
+    border-radius: 10px;
+    font-size: $font_size_27;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px gray;
+    width: 222px
+}
+.cuadrosPerfile_1{
+    @include cuadrosPerfilesMix(251px,164px);
+    z-index: 2;
+}
+.cuadrosPerfile_2{
+    @include cuadrosPerfilesMix(251px,164px);
+    margin-left: -50px;
+    margin-top: -264px;
+    z-index: 1;
+}
+.cuadrosPerfile_3{
+    @include cuadrosPerfilesMix(251px,164px);
+    margin-left: -200px;
+    margin-top: -747px;
+    z-index: 5;
+}
+.cuadrosPerfile_4{
+   /*  background-image: url('../assets/chicaPerfil.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    width: 247px;
+    height: 490px;
+    z-index: 2
+}
+.cuadrosPerfile_5{
+    @include cuadrosPerfilesMix(251px,164px);
+    margin-top: -508px;
+    margin-left: -20px;
+    z-index: 6;
+}
+.cuadrosPerfile_6{
+    @include cuadrosPerfilesMix(251px,164px);
+    margin-left: -30px;
+    z-index: 1;
+}
+.cuadrosPerfile_7{
+    @include cuadrosPerfilesMix(251px,164px);
+    z-index: 3;
+    margin-top: -10px;
+}
+.cuadrosPerfile_8{
+   
+    width: 247px;
+    height: 700px;
+    z-index: 4;
+}
+.cuadrosPerfile_4_6{
+    display: flex;
+    flex-direction: row;
+    padding-left: 29rem;
+    margin-top: -6rem;
+    color: #00CFB4;
+    z-index: 3;
+}
+.cuadrosPerfile_7_8{
+    display: flex;
+    flex-direction: column;
+    margin-top: -800px;
+    margin-left: -70px;
+    z-index: 5;
+}
+.imgEstrechaManos{
+    height: 500px;
+    width: 350px;
+}
+.imgchicaPc{
+    height: 330px;
+    width: 350px;
+}
+.cohete_talento{
+    height: 130px;
+    width: 100px;
+    margin-left: -33px;
+    margin-bottom: -70px;
+}
+
+/* fila 3 */
+.fila3_busquedaTalento{
+    display: flex;
+    flex-direction: column;
+}
+.fila3_buscatalento_titulo{
+    font-size: $font_size_23;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cuadros_fila2_busquedaTalento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+@mixin Funcuadros_fila2_busquedaTalento($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.cuadros_fila2_busquedaTalento_1{
+    @include Funcuadros_fila2_busquedaTalento(250px,500px);
+    z-index: 5;
+    background-image: url('../assets/fondoVerde_1.png');
+    background-repeat: no-repeat;
+    background-size: 150px 250px;
+    background-position: bottom right;
+}
+.cuadros_fila2_busquedaTalento_2{
+    @include Funcuadros_fila2_busquedaTalento(250px,500px);
+    z-index: 5;
+    margin-bottom: 80px;
+    background-image: url('../assets/fondoVerde_2.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+}
+.cuadros_fila2_busquedaTalento_3{
+    @include Funcuadros_fila2_busquedaTalento(250px,500px);
+    z-index: 5;
+    margin-bottom: 160px;
+    background-image: url('../assets/fondoVerde_3.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+}
+.cuadros_fila2_busquedaTalento_4{
+    @include Funcuadros_fila2_busquedaTalento(250px,500px);
+    z-index: 5;
+    margin-bottom: 240px;
+    background-image: url('../assets/fondoVerde_4.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+}
+.cuadros_fila2_busquedaTalento_5{
+    @include Funcuadros_fila2_busquedaTalento(250px,500px);
+    z-index: 5;
+    background-image: url('../assets/fondoVerde_5.png');
+    background-repeat: no-repeat;
+    background-size: 200px 280px;
+    background-position: bottom right;
+
+}
+.cuadro_fila2_imgsTextos_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.cuadro_fila2_busquedaTalento_imgsTextos_1{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.cuadros_fila2_busquedaTalento_img1{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+   
+    margin-left: -70px;
+
+}
+.cuadros_fila2_busquedaTalento_img2{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 199px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+.cuadros_fila2_busquedaTalento_img3{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 199px;
+    z-index: 3;
+    margin-right: -70px;
+}
+.cuadros_fila2_busquedaTalento_img5{
+    background-image: url('../assets/chica_pc.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 320px;
+    height: 200px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+
+.cuadros_fila2_busquedaTalento_img4{
+    background-image: url('../assets/plantita_right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 180px;
+    z-index: 3;
+    margin-right: -70px;
+
+}
+.cover_d-flex{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+/* fin fila 3 */
+
+
+
+
+
+@media (max-width: 767px){
+    .fila_2{
+        background-size: contain;
+    }
+    .BloquePerfiles{
+        margin-top: 120px;
+    }
+    .cuadrosPerfile_4_6{
+        padding-left: 0px;
+    }
+    .garantizamos{
+        margin-right: 0px;
+    }
+    .AsociadoEstrella {
+        margin-right: 0px;
+    }
+    .tituloPerfiles{
+        text-align: center;
+    }
+    .cuadros_fila2_busquedaTalento_4{
+        margin-bottom: 0px;
+    }
+    .cuadros_fila2_busquedaTalento_3{
+        margin-bottom: 0px;
+    }
+    .cuadros_fila2_busquedaTalento_2{
+        margin-bottom: 0px;
+    }
+    .imgchicaPc{
+        width: 250px;
+    }
+}
+@media (min-width: 768px){
+    .fila_2{
+        background-size: contain;
+    }
+    .BloquePerfiles{
+        margin-top: 120px;
+    }
+    .cuadrosPerfile_4_6{
+        padding-left: 0px;
+    }
+    .garantizamos{
+        margin-right: 0px;
+    }
+    .AsociadoEstrella {
+        margin-right: 0px;
+    }
+    .tituloPerfiles{
+        text-align: center;
+    } 
+    .cuadros_fila2_busquedaTalento_4{
+        margin-bottom: 0px;
+    }
+    .cuadros_fila2_busquedaTalento_3{
+        margin-bottom: 0px;
+    }
+    .cuadros_fila2_busquedaTalento_2{
+        margin-bottom: 0px;
+    }
+    .imgchicaPc{
+        width: 250px;
+    }
+}
+@media (min-width: 1024px){
+    .fila_2{
+        background-size: cover;
+    }
+    .BloquePerfiles{
+        margin-top: 80px;
+    }
+    .cuadrosPerfile_4_6{
+        padding-left: 29rem;
+    }
+    .garantizamos{
+        margin-right: 150px;
+    }
+    .AsociadoEstrella {
+        margin-right: 150px;
+    }
+    .tituloPerfiles{
+        text-align: unset;
+    }
+    .cuadros_fila2_busquedaTalento_4{
+        margin-bottom: 240px;
+    }
+    .cuadros_fila2_busquedaTalento_3{
+        margin-bottom: 160px;
+    }
+    .cuadros_fila2_busquedaTalento_2{
+        margin-bottom: 80px;
+    }
+    .imgchicaPc{
+        width: 350px;
+    }
+}
+@media (min-width: 1200px){
+    .fila_2{
+        background-size: cover;
+    }
+    .BloquePerfiles{
+        margin-top: 80px;
+    }
+    .cuadrosPerfile_4_6{
+        padding-left: 29rem;
+    }
+    .garantizamos{
+        margin-right: 150px;
+    }
+    .AsociadoEstrella {
+        margin-right: 150px;
+    }
+    .tituloPerfiles{
+        text-align: unset;
+    }
+    .cuadros_fila2_busquedaTalento_4{
+        margin-bottom: 240px;
+    }
+    .cuadros_fila2_busquedaTalento_3{
+        margin-bottom: 160px;
+    }
+    .cuadros_fila2_busquedaTalento_2{
+        margin-bottom: 80px;
+    }
+    .imgchicaPc{
+        width: 350px;
+    }
+}

@@ -1,0 +1,376 @@
+@import '../_general.scss';
+.fila_1_Clima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.Bloque_Cabecera_Clima{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+}
+.TituloPaginaClima{
+    font-size: $font_size_40;
+    color: #00CFB4;
+    text-align: center;
+}
+
+
+.cuadros_Cabecera_Clima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+
+}
+.textoNuestrosEspecialistas{
+    font-size: $font_size_27;
+    color: #000;
+}
+.textoSomosExpertos{
+    font-size: $font_size_27;
+    color: #000;
+}
+.ListadoCuadros_cabecera_clima_1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ListadoCuadros_cabecera_clima_2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.imagenBandera{
+    max-width: 700px; 
+    height: 600px;
+    
+}
+@mixin cuadroCabecera_clima($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
+
+.cuadro_cabecera_clima_1{
+    @include cuadroCabecera_clima(222px,193px)
+}
+.cuadro_cabecera_clima_2{
+    @include cuadroCabecera_clima(268px,252px)
+}
+.cuadro_cabecera_clima_3{
+    @include cuadroCabecera_clima(217px,193px)
+}
+.cuadro_cabecera_clima_4{
+    @include cuadroCabecera_clima(222px,193px)
+}
+.cuadro_cabecera_clima_5{
+    @include cuadroCabecera_clima(222px,252px)
+}
+.cuadro_cabecera_clima_6{
+    @include cuadroCabecera_clima(222px,193px)
+}
+.cuadros_imagen_clima{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fila_2_Clima{
+    
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00CFB4;
+
+}
+.cab_fila2_clima{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.cab_fila3_clima_1_img{
+    width: 310px;
+    height: 500px;
+    margin-top: 200px;
+}
+.cab_fila2_clima_text1{
+    font-size: $font_size_30;
+    color: #fff;
+    max-width: 700px;
+    margin-left: 100px;
+}
+@media (max-width: 767px){
+    .imagenBandera{
+        width: 300px; 
+        height: 300px;
+        
+    }
+    .ListadoCuadros_cabecera_clima_1{
+        flex-direction: column;
+    }
+    .ListadoCuadros_cabecera_clima_2{
+        flex-direction: column;
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 50px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 768px){
+    .imagenBandera{
+        width: 500px; 
+        height: 500px;
+        
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 50px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 992px){
+    .imagenBandera{
+        width: 700px; 
+        height: 700px;
+        
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 50px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 1400px){
+    .fila_2_Clima{
+        background-size: cover;
+    }
+    .cab_fila2_clima{
+        justify-content: flex-start;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 150px;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+.cab_fila2_clima_img1{
+    background-image: url('../assets/Fila2_ilustracion1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 283px;
+    height: 293px;
+}
+
+@mixin fun_cuadros_fila2_clima($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    justify-content: center;
+}
+.cuadros_fila2_clima{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.cab_fila2_clima_2_img{
+
+}
+
+.cab_fila2_clima_2_img_img{
+    background-image: url('../assets/Fila2_ilustracion3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 283px;
+    height: 293px;
+    margin-top: 10px;
+
+}
+.cab_fila2_clima_3_img{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cab_fila2_clima_3_img_img{
+    background-image: url('../assets/Fila2_ilustracion2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 283px;
+    height: 293px;
+}
+.cab_fila2_clima_1{
+    @include fun_cuadros_fila2_clima(336px,401px);
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 120px 250px;
+    background-position: bottom right;
+}
+.cab_fila2_clima_2{
+    @include fun_cuadros_fila2_clima(336px,443px);
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 170px 250px;
+    background-position: bottom right;
+}
+.cab_fila2_clima_3{
+    @include fun_cuadros_fila2_clima(336px,502px);
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 170px 250px;
+    background-position: bottom right;
+}
+.cab_fila2_clima_4{
+    @include fun_cuadros_fila2_clima(336px,566px);
+    background-image: url('../assets/fondo_4.png');
+    background-repeat: no-repeat;
+    background-size: 170px 250px;
+    background-position: bottom right;
+}
+
+.fila_3_Clima
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+@mixin fun_cab_fila3_clima($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.cab_fila3_clima_text1{
+    font-size: $font_size_27;
+    color: #000;
+    font-weight: 600;
+}
+.cab_fila3_clima{
+    display: flex;
+    align-items:flex-start;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+.cuadros_fila3_clima{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-size: $font_size_27;
+    color: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.cuadros_fila3_clima_v2{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: $font_size_27;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.cab_fila3_clima_1{
+   
+}
+.cab_fila3_clima_2{
+    @include fun_cab_fila3_clima(250px,422px)
+}
+.cab_fila3_clima_3{
+    @include fun_cab_fila3_clima(250px,550px)
+}
+.cab_fila3_clima_4{
+    @include fun_cab_fila3_clima(250px,422px)
+}
+.span_eleccion{
+    color: #00CFB4;
+}

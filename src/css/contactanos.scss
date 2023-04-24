@@ -1,0 +1,103 @@
+@import '../_general.scss';
+
+.fila_1_contactanos{
+    display: flex;
+    background-image: url("../assets/fondo_contactanos.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #00CFB4;
+    margin-top: 50px;
+}
+.fila1_contactanos_correo{
+    display: flex;
+    flex-direction:column;
+  
+    background-color: rgba(19, 139, 123, 0.5);
+    border-radius: 20px;
+    color: #000;
+    border-style: solid;
+    justify-content: center;
+    padding: 50px 40px;
+    gap: 10px;
+}
+
+.fila1_contactanos_cover_input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fila1_contactanos_label{
+    width: 100px;
+    color: #fff;
+    font-size: $font_size_23;
+}
+.fila1_contactanos_cover_boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.fila1_contactanos_botonCorreo{
+  
+    color: #00CFB4;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #F1F9FF;
+  
+    margin-top: 9px;
+    margin-left: 30px;
+    font-size: $font_size;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+}
+.fila1_contactanos_input{
+    width: 350px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 10px;
+    border: 2px solid #00CFB4;
+    outline: none;
+}
+
+.fila1_contactanos_cover_textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fila1_contactanos_label_cuentanos{
+    width: 100%;
+    color: #fff;
+    font-size: $font_size_23;
+}
+.fila1_contactanos_textarea{
+    width: 450px;
+    font-size: 18px;
+    background-color: white;
+    padding: 14px 32px 14px 16px;
+    border-radius: 10px;
+    border: 2px solid #00CFB4;
+    outline: none;
+}
+.fila1_contactanos_texto{
+    font-size: $font_size_40;
+    color: #00CFB4;
+    max-width: 500px;
+}
+.fila1_contactanos_correo_texto{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

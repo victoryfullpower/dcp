@@ -1,0 +1,322 @@
+@import '../_general.scss';
+
+
+
+.fila_1_Evaluacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.TituloPaginaEvaluacion{
+    font-size: $font_size_40;
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 700;
+}
+.Cab_fila1_Evaluacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.texto_fila1_Evaluacionv1{
+    max-width: 800px;
+}
+.texto_fila1_Evaluacion{
+    font-size: $font_size_25;
+    font-weight: 400;
+    color: #000;
+    max-width: 600px;
+}
+.img_fila1_Evaluacion{
+    background-image: url('../assets/asociadoEstrella.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 350px;
+    height: 300px;
+}
+.fila_2_Evaluacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cuadros_fila2_Evaluacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.cuadros_fila2_cuadro_img1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.cuadros_fila2_evaluacion_cuadro_img2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cuadros_fila2_Evaluacion_img1{
+    background-image: url('../assets/estrecharManos.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 240px;
+    height: 344px;
+    z-index: 3;
+   
+    margin-top: 9px;
+
+}
+.cuadros_fila2_Evaluacion_img2{
+    background-image: url('../assets/chica_chico.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 236px;
+    height: 290px;
+    z-index: 3;
+}
+
+@mixin Funcuadros_fila2_Evaluacion($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #00CFB4;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+}
+
+.cuadros_fila2_Evaluacion_1{
+    @include Funcuadros_fila2_Evaluacion(242px,280px);
+    z-index: 1;
+}
+.cuadros_fila2_Evaluacion_2{
+    @include Funcuadros_fila2_Evaluacion(242px,350px);
+    z-index: 1;
+    margin-top: -349px;
+}
+.cuadros_fila2_Evaluacion_3{
+    @include Funcuadros_fila2_Evaluacion(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+}
+.cuadros_fila2_Evaluacion_4{
+    @include Funcuadros_fila2_Evaluacion(242px,350px);
+    z-index: 1;
+    margin-top: -70px;
+}
+.cuadros_fila2_Evaluacion_5{
+    @include Funcuadros_fila2_Evaluacion(242px,280px);
+    z-index: 1;
+    margin-top: -338px;
+}
+
+.fila_3_Evaluacion{
+    
+    display: flex;
+    background-image: url("../assets/fondocurva2.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00CFB4;
+
+}
+.cuadros_fila3_Evaluacion_img2{
+    background-image: url('../assets/plantita.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+    z-index: 3;
+    margin-top: 400px;
+    margin-right: -90px;
+}
+@mixin Funcuadros_fila3_Evaluacion($width, $height) {
+    display: flex;
+    flex-direction:column;
+    width: $width;
+    height: $height;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: $font_size_25;
+    text-align: center;
+    color: #00CFB4;
+    justify-content: center;
+}
+.cab_fila3_Evaluacion_Texto_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+.cuadros_fila3_Evaluacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    flex-wrap: wrap;
+}
+.cuadros_fila3_Evaluacion_img1{
+    background-image: url('../assets/chicatapaboca.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 300px;
+    height: 250px;
+
+}
+.fila3_Evaluacion_imgcuadro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%
+}
+.fila3_Evaluacion_textcuadro{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.cuadros_fila3_Evaluacion_1{
+    @include Funcuadros_fila3_Evaluacion(220px,270px);
+    background-image: url('../assets/fondo_1.png');
+    background-repeat: no-repeat;
+    background-size: 80px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_Evaluacion_2{
+    @include Funcuadros_fila3_Evaluacion(260px,370px);
+    background-image: url('../assets/fondo_2.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_Evaluacion_3{
+    @include Funcuadros_fila3_Evaluacion(220px,270px);
+    background-image: url('../assets/fondo_3.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_Evaluacion_4{
+    @include Funcuadros_fila3_Evaluacion(260px,370px);
+    background-image: url('../assets/fondo_4.png');
+    background-repeat: no-repeat;
+    background-size: 120px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_Evaluacion_5{
+    @include Funcuadros_fila3_Evaluacion(220px,270px);
+    background-image: url('../assets/fondo_5.png');
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    background-position: bottom right;
+}
+.cuadros_fila3_Evaluacion_text{
+    font-size: $font_size_30;
+    margin-left: 100px;
+}
+@media (max-width: 767px){
+    .cuadros_fila2_Evaluacion_img1{
+        margin-top: 0px;
+    }
+    .cuadros_fila2_Evaluacion_1{
+        margin-top: 0px;
+    }
+    .cuadros_fila2_Evaluacion_2{
+        margin-top: 0px;
+    }
+    .cuadros_fila2_Evaluacion_3{
+        margin-top: 0px;
+    }
+    .cuadros_fila2_Evaluacion_4{
+        margin-top: 0px;
+    }
+    .cuadros_fila2_Evaluacion_5{
+        margin-top: 0px;
+    }
+    .fila_3_Evaluacion{
+        background-size: contain;
+    }
+    .fila3_Evaluacion_textcuadro{
+      width: 100%;
+    }
+    .cuadros_fila3_Evaluacion_img2{
+        margin-top: 0px;
+    }
+    .cuadros_fila3_Evaluacion_text{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .cuadros_fila3_Evaluacion{
+        margin-top: 0px;
+    }
+    .texto_fila1_Evaluacionv1{
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    
+}
+@media (min-width: 768px){
+    .fila_3_Evaluacion{
+        background-size: contain;
+    }
+    .cuadros_fila3_Evaluacion_text{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .cuadros_fila3_Evaluacion{
+        margin-top: 0px;
+    }
+    .cuadros_fila3_Evaluacion{
+        margin-top: -100px;
+    }
+}
+@media (min-width: 1024px){
+    .cuadros_fila3_Evaluacion{
+        margin-top: -100px;
+    }
+    .fila_3_Evaluacion{
+        background-size: cover;
+    }
+}
+@media (min-width: 1200px){
+    .fila3_Evaluacion_textcuadro{
+        width: 50%;
+      }
+    .fila_3_Evaluacion{
+        background-size: cover;
+    }
+}
