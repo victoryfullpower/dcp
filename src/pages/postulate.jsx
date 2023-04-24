@@ -1,6 +1,6 @@
 import '../css/postulate.scss'
 import React, { useState, useEffect } from 'react';
-import Cardpostulante from '../components/cardPostulante';
+import Cardpostulante from '../components/cardPostulante.jsx';
 import Button from 'react-bootstrap/Button';
 import * as AWS from 'aws-sdk';
 import Correopostulante from '../components/correopostulante';
