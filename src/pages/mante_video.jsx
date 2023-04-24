@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import noimage from '../assets/noimage.png'
-import Menumante from '../components/menumante';
+import Menumante from '../components/menumante.jsx';
 
 AWS.config.update({
     region: 'us-east-1',

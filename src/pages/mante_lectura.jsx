@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import noimage from '../assets/noimage.png'
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import Menumante from '../components/menumante';
+import Menumante from '../components/menumante.jsx';
 AWS.config.update({
     region: 'us-east-1',
     endpoint: 'dynamodb.us-east-1.amazonaws.com',

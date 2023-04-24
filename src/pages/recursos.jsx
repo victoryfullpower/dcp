@@ -1,8 +1,8 @@
 import '../css/recursos.scss'
 import * as AWS from 'aws-sdk';
 import React, { useState, useEffect } from 'react';
-import Cardvideo from '../components/cardvideo';
-import Cardlectura from '../components/cardlectura';
+import Cardvideo from '../components/cardvideo.jsx';
+import Cardlectura from '../components/cardlectura.jsx';
 import {useNavigate} from 'react-router-dom';
 AWS.config.update({
     region: 'us-east-1',

@@ -1,6 +1,4 @@
 import '../css/potencialHumano.scss'
-import Footer from '../components/footer';
-import Cardpostulante from '../components/cardPostulante';
 const PotencialHumano = () => {
     return (
         <div className='NoirProRegular'>

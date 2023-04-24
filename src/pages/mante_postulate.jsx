@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Menumante from '../components/menumante';
+import Menumante from '../components/menumante.jsx';
 
 AWS.config.update({
     region: 'us-east-1',

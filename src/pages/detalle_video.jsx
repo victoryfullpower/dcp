@@ -2,7 +2,7 @@ import '../css/recursos.scss'
 import * as AWS from 'aws-sdk';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import YoutubeEmbed from '../components/youtube_embed';
+import YoutubeEmbed from '../components/youtube_embed.jsx';
 import {useNavigate} from 'react-router-dom';
 
 AWS.config.update({
