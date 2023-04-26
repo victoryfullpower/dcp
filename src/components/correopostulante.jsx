@@ -6,6 +6,11 @@ function Correopostulante({postulacion,skills}){
     var fileNamev2 = "";
     var correo = "";
     var telefono = "";
+    var arreglo = "";
+    var arreglo2 = [];
+    arreglo = skills[0][0][0];
+    arreglo2 = arreglo.split(",")
+    console.log("arreglo2", skills[0][0][0])
     const [base64, setBase64] = useState('');
     const [fileName, setfileName] = useState('');
     const openFile = (e) => {
@@ -111,7 +116,9 @@ function Correopostulante({postulacion,skills}){
                 <ul className='fila4_postulate_ul'>
                     <p>SKILLS REQUERIDOS:</p>
                     {
-                        skills.map((x, i) =>
+                        
+
+                        arreglo2.map((x, i) =>
                         <li key={i}>{x}</li>
                         )
                     }
