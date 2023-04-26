@@ -49,7 +49,7 @@ const Inicio = () => {
                     
                         <div className='ListadoCuadros'>
                         <div className='cuadroInicio1'><div className='cabCuadro'>Metodología</div><div onClick={()=>{handleclick('Metodologia')}} className='redmore'>Conoce más</div></div>
-                        <div className='cuadroInicio2'><div className='cabCuadro'>DPC Ayuda Social</div><div onClick={()=>{handleclick('Social')}} className='redmore'>Conoce más</div></div>
+                        <div className='cuadroInicio2'><div className='cabCuadro'>DPC Social</div><div onClick={()=>{handleclick('Social')}} className='redmore'>Conoce más</div></div>
                         <div className='cuadroInicio1'><div className='cabCuadro'>Recursos</div><div onClick={()=>{handleclick('Recursos')}}  className='redmore'>Conoce más</div></div>
                     </div>
                     </div>

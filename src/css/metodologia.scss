@@ -4,19 +4,7 @@
     flex-direction: column;
     position: relative;
 }
-.main1::before {    
-    content: "";
-    background-image: url("../assets/fontoMetodologiaCuadros.png");
-    background-size: 2000px 1000px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.10;
-    background-position: center top;
-    
-}
+
 .main2{
     display: flex;
     flex-direction: column;
@@ -122,7 +110,7 @@
     
 }
 .cuadro1{
-    @include cuadros(482px,250px);
+    @include cuadros(482px,300px);
     
     background-image: url('../assets/fondoVerde_1.png');
     background-repeat: no-repeat;
@@ -131,21 +119,21 @@
 
 }
 .cuadro2{
-    @include cuadros(651px,250px);
+    @include cuadros(651px,300px);
     background-image: url('../assets/fondoVerde_2.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
     background-position: bottom right;
 }
 .cuadro3{
-    @include cuadros(651px,250px);
+    @include cuadros(651px,300px);
     background-image: url('../assets/fondoVerde_3.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
     background-position: bottom right;
 }
 .cuadro4{
-    @include cuadros(482px,250px);
+    @include cuadros(482px,300px);
     
     background-image: url('../assets/fondoVerde_4.png');
     background-repeat: no-repeat;

@@ -320,6 +320,7 @@
     background-repeat: no-repeat;
     background-size: 120px 250px;
     background-position: bottom right;
+    position: relative
 }
 .cuadros_fila3_PotencialH_2{
     @include Funcuadros_fila3_PotencialH(310px,500px);
@@ -328,6 +329,7 @@
     background-repeat: no-repeat;
     background-size: 150px 250px;
     background-position: bottom right;
+    position: relative
 }
 .cuadros_fila3_PotencialH_3{
     @include Funcuadros_fila3_PotencialH(310px,500px);
@@ -335,6 +337,7 @@
     background-repeat: no-repeat;
     background-size: 150px 250px;
     background-position: bottom right;
+    position: relative
 }
 
 .cuadros_fila3_PotencialH_text{

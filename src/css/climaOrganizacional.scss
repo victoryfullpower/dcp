@@ -246,6 +246,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+  position: relative;
 }
 .cab_fila2_clima_2_img{
 
@@ -281,6 +282,7 @@
     background-repeat: no-repeat;
     background-size: 120px 250px;
     background-position: bottom right;
+    position: relative
 }
 .cab_fila2_clima_2{
     @include fun_cuadros_fila2_clima(336px,443px);
@@ -288,6 +290,7 @@
     background-repeat: no-repeat;
     background-size: 170px 250px;
     background-position: bottom right;
+    position: relative
 }
 .cab_fila2_clima_3{
     @include fun_cuadros_fila2_clima(336px,502px);
@@ -295,6 +298,7 @@
     background-repeat: no-repeat;
     background-size: 170px 250px;
     background-position: bottom right;
+    position: relative
 }
 .cab_fila2_clima_4{
     @include fun_cuadros_fila2_clima(336px,566px);
@@ -302,6 +306,7 @@
     background-repeat: no-repeat;
     background-size: 170px 250px;
     background-position: bottom right;
+    position: relative
 }
 
 .fila_3_Clima
@@ -363,14 +368,29 @@
    
 }
 .cab_fila3_clima_2{
-    @include fun_cab_fila3_clima(250px,422px)
+    @include fun_cab_fila3_clima(250px,422px);
+    position: relative
 }
 .cab_fila3_clima_3{
-    @include fun_cab_fila3_clima(250px,550px)
+    @include fun_cab_fila3_clima(250px,550px);
+    position: relative
 }
 .cab_fila3_clima_4{
-    @include fun_cab_fila3_clima(250px,422px)
+    @include fun_cab_fila3_clima(250px,422px);
+    position: relative
 }
 .span_eleccion{
     color: #00CFB4;
+}
+
+.clima_opacity{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity .5s;
+    width: 100%;
+    padding: 0px 10px;
+    text-align: left;
 }

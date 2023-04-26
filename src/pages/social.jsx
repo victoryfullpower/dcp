@@ -1,5 +1,7 @@
 import '../css/social.scss'
 import { useState } from "react";
+import video from '../assets/social.mp4'
+
 const Social = () => {
     const [cantidad, setCantidad] = useState(0);
    const pagar = (e)=>{
@@ -56,7 +58,9 @@ const Social = () => {
             </div>
             <div className='fila_3_social'>
                 <div className='fila3_social_titulo NoirProBold'>Impactamos en sus vidas para llevarlos a un siguiente nivel</div>
-                <div className='fila3_social_img'></div>
+                <video width="100%" height="auto" muted autoPlay loop >
+                <source src={video} type="video/mp4"/>
+            </video>
             </div>
 
             <div className="fila_4_social NoirProBold">

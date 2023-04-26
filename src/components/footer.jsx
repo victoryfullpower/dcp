@@ -40,10 +40,10 @@ function Footer() {
           <div className="footercolum">
             <div>ESPECIALIDADES</div>
             <ul className="list-unstyled vinculofooter">
-              <li onClick={()=>{handleclick('BusquedaTalento')}}>Búsqueda de talento</li>
-              <li onClick={()=>{handleclick('ClimaOrganizacional')}}>Clima organizacional</li>
-              <li onClick={()=>{handleclick('EvaluacionTalento')}}>Evaluación de talento</li>
+              <li onClick={()=>{handleclick('ClimaOrganizacional')}}>Desarrollo organizacional</li>
               <li onClick={()=>{handleclick('PotencialHumano')}}>Desarrollo del Potencial Humano</li>
+              <li onClick={()=>{handleclick('BusquedaTalento')}}>Búsqueda de talento</li>
+              <li onClick={()=>{handleclick('EvaluacionTalento')}}>Evaluación de talento</li>
             </ul>
           </div>
           {/* Column4 */}
