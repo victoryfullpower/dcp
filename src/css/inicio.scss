@@ -146,6 +146,7 @@
     color:#000000;
     font-size: $font_size_18;
     text-decoration: underline;
+    cursor: pointer;
 }
 .cuadroInicio1{
     @include cuadroInicio(193px,212px);
