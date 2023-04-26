@@ -35,7 +35,7 @@ function header() {
               <Nav.Link as={Link} to="/Social">DPC Social</Nav.Link>
               <Nav.Link as={Link} to="/Nosotros">Nosotros</Nav.Link>
              
-              <Button className='boton NoirProRegular' as={Link} to="/Contactanos" variant="primary">Contactanos</Button>
+              <Button className='boton NoirProRegular' as={Link} to="/Contactanos" variant="primary">CONTÁCTANOS</Button>
             </Nav>
           </Navbar.Collapse>
           </Container>

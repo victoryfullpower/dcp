@@ -159,7 +159,7 @@ const BusquedaTalento = () => {
                 </div>
             </div>
             <div className="fila3_busquedaTalento NoirProRegular">
-                <div className='fila3_buscatalento_titulo'>
+                <div className='fila3_buscatalento_titulo NoirProBold' style={{fontSize:"28px"}}>
                     <div style={{ color: "#00CFB4" }}>Descubre los motivos para que</div><div style={{ color: "#000" }}><span style={{ color: "#00CFB4" }}>conversemos</span> sobre este servicio</div>
                 </div>
                 <div className='cuadros_fila2_busquedaTalento'>

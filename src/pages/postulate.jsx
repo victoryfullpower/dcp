@@ -160,7 +160,7 @@ const Postulate = () => {
                    </div>
                    <div className='fila2_postulate_listado'>
                        <ul className='fila2_postulate_ul'>
-                           <li>Siempre te mantendremos al tanto del estatus del proceso</li>
+                           <li>Siempre te mantendremos al tanto del estatus del proceso.</li>
                            <li>Te ofrecemos vacantes 100% reales y legales.</li>
                            <li>Contamos con clientes trasnacionales y nacionales.</li>
                            <li>Te brindaremos feedback al término del proceso.</li>

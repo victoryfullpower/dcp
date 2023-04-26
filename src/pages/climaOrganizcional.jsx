@@ -110,7 +110,7 @@ const ClimaOrganizacional = () => {
                     <div className="cuadros_imagen_clima">
                         <div className="cuadros_Cabecera_Clima NoirProRegular">
                             <div className='textoSomosExpertos'>
-                                Somos expertos en levantar información sobre cómo perciben, sienten y opinan las personas que trabajan contigo.
+                                <span>Somos expertos en levantar información sobre cómo</span> <span style={{color:"#00CFB4"}}> perciben, sienten y opinan</span>  las personas que trabajan contigo.
                             </div>
                             <div className='ListadoCuadros_cabecera_clima_1'>
                                 <div className='cuadro_cabecera_clima_1'>Nos alineamos a tus necesidades.</div>
@@ -118,7 +118,7 @@ const ClimaOrganizacional = () => {
                                 <div className='cuadro_cabecera_clima_3'>Te brindamos un plan de acción de mejora a la medida. </div>
                             </div>
                             <div className='textoNuestrosEspecialistas'>
-                                De la mano con nuestros especialistas y durante el proceso de ejecución podrás hacer la diferencia ofreciéndole a tus  colaboradores una experiencia ganmificada, permitiendo:
+                            <span>De la mano con nuestros especialistas y durante el</span><span style={{color:"#00CFB4"}}> proceso de ejecución </span>podrás<span style={{color:"#00CFB4"}}> hacer la diferencia</span> ofreciéndole a tus  colaboradores una experiencia <span style={{color:"#00CFB4"}}>gamificada</span>, permitiendo:
                             </div>
                             <div className='ListadoCuadros_cabecera_clima_2'>
                                 <div className='cuadro_cabecera_clima_4'>Difusión de conceptos y campañas.</div>
