@@ -74,10 +74,12 @@
     text-align: center;
     color: #fff;
     justify-content: center;
+    
 }
 
 .cuadro_cabecera_clima_1{
-    @include cuadroCabecera_clima(222px,193px)
+    @include cuadroCabecera_clima(222px,193px);
+    padding: 0px 17px 0px 17px;
 }
 .cuadro_cabecera_clima_2{
     @include cuadroCabecera_clima(268px,252px)
@@ -393,4 +395,7 @@
     width: 100%;
     padding: 0px 10px;
     text-align: left;
+}
+.cuadrosfila3Clima{
+    margin: 0px 25px;
 }

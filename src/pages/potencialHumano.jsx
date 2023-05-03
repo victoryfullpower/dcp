@@ -215,7 +215,7 @@ const PotencialHumano = () => {
                     <div style={{ zIndex: "7" }}>
 
                         <div className='cuadros_fila5_PotencialH_3'>
-                            <div style={{ width: "100%" }}>Mejorar tu manera de relacionarte con los demás.</div>
+                            <div style={{ width: "100%" }}>Generar autonomía y empoderamiento.</div>
 
                         </div>
                         <div className='cuadros_fila5_PotencialH_img5'></div>
@@ -223,7 +223,7 @@ const PotencialHumano = () => {
                     <div>
                         <div className='cuadros_fila5_PotencialH_img6'></div>
                         <div className='cuadros_fila5_PotencialH_1'>
-                            <div style={{ marginBottom: "55px" }}>Generar autonomía y empoderamiento.</div>
+                            <div style={{ marginBottom: "55px" }}>Mejorar tu manera de relacionarte con los demás.</div>
                             <div className='cuadro_fila5_imgsTextos_2'>
                             </div>
                         </div>

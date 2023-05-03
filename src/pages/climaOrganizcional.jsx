@@ -209,7 +209,7 @@ const ClimaOrganizacional = () => {
                                     <li>Ergonomía</li>
                                 </ul>
                             </div>
-                            <div id="clima_textod11">
+                            <div id="clima_textod11" className='cuadrosfila3Clima'>
                                 NUESTRO SERVICIO
                             </div>
 
@@ -225,7 +225,7 @@ const ClimaOrganizacional = () => {
 
                                 </ul>
                             </div>
-                            <div id="clima_textod22">
+                            <div id="clima_textod22" className='cuadrosfila3Clima'>
 
                                 NECESIDADES QUE RESOLVEMOS
                             </div>
@@ -236,7 +236,7 @@ const ClimaOrganizacional = () => {
                             <div className='clima_opacity' id="clima_textod3">
                                 Brindamos un enfoque humanizado con respuestas rápidas y campañas comunicacionales virtuales para darte una propuesta de plan de acción a la medida.
                             </div>
-                            <div  id="clima_textod33">
+                            <div  id="clima_textod33"  className='cuadrosfila3Clima'>
                                 LO QUE NOS HACE DIFERENTES
                             </div>
 

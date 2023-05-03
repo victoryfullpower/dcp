@@ -80,7 +80,7 @@ const Metodologia = () => {
                     
                     <div className='listadoLogos'>
                         <div className='organizacionalez NoirProRegular'>
-                            +4 AÑOS ACOMPAÑÁNDOLOS EN LOGRAR SUS OBJETIVOS ORGANIZACIONALES
+                            +5 AÑOS ACOMPAÑÁNDOLOS EN LOGRAR SUS OBJETIVOS ORGANIZACIONALES
                         </div> 
                         <div className='Logo1'>
                             

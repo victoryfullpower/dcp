@@ -286,7 +286,9 @@
         text-align: center;
         
     }
-    
+    .cuadros_fila2_Evaluacion{
+        flex-wrap: wrap;
+    }
     
 }
 @media (min-width: 768px){
@@ -303,6 +305,9 @@
     .cuadros_fila3_Evaluacion{
         margin-top: -100px;
     }
+    .cuadros_fila2_Evaluacion{
+        flex-wrap: wrap;
+    }
 }
 @media (min-width: 1024px){
     .cuadros_fila3_Evaluacion{
@@ -311,6 +316,9 @@
     .fila_3_Evaluacion{
         background-size: cover;
     }
+    .cuadros_fila2_Evaluacion{
+        flex-wrap: nowrap;
+    }
 }
 @media (min-width: 1200px){
     .fila3_Evaluacion_textcuadro{
@@ -318,5 +326,8 @@
       }
     .fila_3_Evaluacion{
         background-size: cover;
+    }
+    .cuadros_fila2_Evaluacion{
+        flex-wrap: nowrap;
     }
 }

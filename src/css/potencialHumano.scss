@@ -494,7 +494,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap;
+    
    
  }
  .cuadros_fila5_cuadro_img1{
@@ -597,6 +597,7 @@
     text-align: center;
     color: #fff;
     justify-content: center;
+    padding: 0px 10px 0px 10px;
  }
  
  
@@ -732,6 +733,7 @@
     .cuadros_fila5_PotencialH{
         gap: 50px;
         margin-top: 50px;
+        flex-wrap: wrap;
     }
     .cuadros_fila3_PotencialH_2{
         margin-top: 0px;
@@ -756,6 +758,11 @@
         background-size: contain;
         margin-top: 50px;
     }
+    .cuadros_fila5_PotencialH{
+        gap: 50px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
 }
 @media (min-width: 1024px){
     .fila_3_PotencialH{
@@ -766,6 +773,11 @@
         background-size: contain;
         margin-top: 50px;
     }
+    .cuadros_fila5_PotencialH{
+        gap: 50px;
+        margin-top: 50px;
+        flex-wrap: nowrap;
+    }
 }
 @media (min-width: 1200px){
     .fila_3_PotencialH{
@@ -775,5 +787,10 @@
     .fila_4_PotencialH{
         background-size: contain;
         margin-top: 0px;
+    }
+    .cuadros_fila5_PotencialH{
+        gap: 50px;
+        margin-top: 50px;
+        flex-wrap: nowrap;
     }
 }

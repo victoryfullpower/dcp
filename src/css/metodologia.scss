@@ -162,7 +162,6 @@
 .listadoCajasMetodologia{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap:20px;
@@ -387,4 +386,38 @@
 .logosOrganizacionales{
 display: inline;   
 
+}
+
+
+@media (max-width: 767px){
+    .listadoCajasMetodologia{
+        flex-wrap: wrap;
+    }
+    .listadoCuadros_metodologia{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px){
+    .listadoCajasMetodologia{
+        flex-wrap: wrap;
+    }
+    .listadoCuadros_metodologia{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 1024px){
+    .listadoCajasMetodologia{
+        flex-wrap: nowrap;
+    }
+    .listadoCuadros_metodologia{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 1200px){
+    .listadoCajasMetodologia{
+        flex-wrap: nowrap;
+    }
+    .listadoCuadros_metodologia{
+        flex-wrap: nowrap;
+    }
 }

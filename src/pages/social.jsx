@@ -24,8 +24,16 @@ const Social = () => {
     }
     
    }
+   const pagarEnter = (e) => {
+    if (e.code === "Enter") {
+        pagar(e)
+     
+    }
+  }
    const getCantidad = (e)=>{
     setCantidad(e.target.value);
+   
+
 }
     return (
         <div className='NoirProRegular'>
@@ -57,7 +65,6 @@ const Social = () => {
                 </div>
             </div>
             <div className='fila_3_social'>
-                <div className='fila3_social_titulo NoirProBold'>Impactamos en sus vidas para llevarlos a un siguiente nivel</div>
                 <video width="100%" height="auto" muted autoPlay loop >
                 <source src={video} type="video/mp4"/>
             </video>
@@ -118,11 +125,12 @@ const Social = () => {
                             <div>
                                 <input
                                         className="fila1_contactanos_input"
-                                        type='text'
+                                        type='number'
                                         id='input_donar'
                                         placeholder='Ingresar Monto a donar'
                                         onChange={getCantidad}
                                         name='texto3'
+                                        onKeyDown={pagarEnter}
                                     />
                             </div>
                             
