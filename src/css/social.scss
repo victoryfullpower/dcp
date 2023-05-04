@@ -103,6 +103,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 0px;
+    margin-bottom: -120px;
+    z-index: 1;
+    position: relative;
 }
 
 .fila3_social_img{
@@ -133,7 +136,8 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #fff;
+    z-index: 2;
+    position: relative;
 }
 .social_fila4_titulo{
     font-size: $font_size_50;
@@ -337,8 +341,8 @@
     padding: 5px 5px;
     cursor: pointer;
     background-color: #F1F9FF;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 15px;
+   
     font-size: $font_size_15;
     padding: 15px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);

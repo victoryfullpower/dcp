@@ -4,37 +4,37 @@ import video from '../assets/social.mp4'
 
 const Social = () => {
     const [cantidad, setCantidad] = useState(0);
-   const pagar = (e)=>{
+    const pagar = (e) => {
 
 
-    if (cantidad > 0){
-        Culqi.settings({
-            title: 'DPC',
-            currency: 'PEN',  // Este parámetro es requerido para realizar pagos yape
-            amount: (cantidad * 100),  // Este parámetro es requerido para realizar pagos yape
-            order: 'ord_live_0CjjdWhFpEAZlxlz' // Este parámetro es requerido para realizar pagos con pagoEfectivo, billeteras y Cuotéalo
-          });
-        Culqi.open();
-        e.preventDefault();
-    }else{
-        document.getElementById("input_donar").value = ""
-        document.getElementById("input_donar").focus()
-        alert("No ingreso un monto valido")
+        if (cantidad > 0) {
+            Culqi.settings({
+                title: 'DPC',
+                currency: 'PEN',  // Este parámetro es requerido para realizar pagos yape
+                amount: (cantidad * 100),  // Este parámetro es requerido para realizar pagos yape
+                order: 'ord_live_0CjjdWhFpEAZlxlz' // Este parámetro es requerido para realizar pagos con pagoEfectivo, billeteras y Cuotéalo
+            });
+            Culqi.open();
+            e.preventDefault();
+        } else {
+            document.getElementById("input_donar").value = ""
+            document.getElementById("input_donar").focus()
+            alert("No ingreso un monto valido")
+
+        }
 
     }
-    
-   }
-   const pagarEnter = (e) => {
-    if (e.code === "Enter") {
-        pagar(e)
-     
-    }
-  }
-   const getCantidad = (e)=>{
-    setCantidad(e.target.value);
-   
+    const pagarEnter = (e) => {
+        if (e.code === "Enter") {
+            pagar(e)
 
-}
+        }
+    }
+    const getCantidad = (e) => {
+        setCantidad(e.target.value);
+
+
+    }
     return (
         <div className='NoirProRegular'>
             <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>DPC Social</span></div>
@@ -66,8 +66,8 @@ const Social = () => {
             </div>
             <div className='fila_3_social'>
                 <video width="100%" height="auto" muted autoPlay loop >
-                <source src={video} type="video/mp4"/>
-            </video>
+                    <source src={video} type="video/mp4" />
+                </video>
             </div>
 
             <div className="fila_4_social NoirProBold">
@@ -120,20 +120,21 @@ const Social = () => {
 
                         </div>
                         <div className='fila6_postulate_cover_boton'>
-                            <button id='btn_pagar' onClick={pagar} className='fila6_postulate_botonCorreo NoirProBold' variant="primary">QUIERO DONAR</button>
-                            
                             <div>
                                 <input
-                                        className="fila1_contactanos_input"
-                                        type='number'
-                                        id='input_donar'
-                                        placeholder='Ingresar Monto a donar'
-                                        onChange={getCantidad}
-                                        name='texto3'
-                                        onKeyDown={pagarEnter}
-                                    />
+                                    className="fila1_contactanos_input"
+                                    type='number'
+                                    id='input_donar'
+                                    placeholder='Ingresar Monto a donar'
+                                    onChange={getCantidad}
+                                    name='texto3'
+                                    onKeyDown={pagarEnter}
+                                />
                             </div>
-                            
+                            <button id='btn_pagar' onClick={pagar} className='fila6_postulate_botonCorreo NoirProBold' variant="primary">QUIERO DONAR</button>
+
+
+
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div className='social_fila6_img1'></div>
@@ -146,6 +147,6 @@ const Social = () => {
             </div>
 
         </div>
-    ) 
+    )
 }
 export default Social

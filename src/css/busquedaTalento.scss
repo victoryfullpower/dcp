@@ -50,7 +50,7 @@
 .garantizamos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 150px;
 }
 
@@ -166,7 +166,8 @@
 }
 
 .cuadroAsociadoEstrella_3 {
-    @include cuadroGarantizamos(240px,193px)
+    @include cuadroGarantizamos(240px,193px);
+    padding: 0px 10px 0 10px;
 }
 .fila_2{
     

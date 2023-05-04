@@ -9,7 +9,7 @@ const EvaluacionTalento = () => {
                 </div>
 
                 <div className='Cab_fila1_Evaluacion'>
-                    <div className='texto_fila1_Evaluacionv1'><div className='texto_fila1_Evaluacion'>Nuestros psicólogos organizacionales se encargarán de <span style={{ color: "#00CFB4" }}>evaluar el perfil psico laboral</span> de los profesionales analizando factores de:</div></div>
+                    <div className='texto_fila1_Evaluacionv1'><div className='texto_fila1_Evaluacion'>Nuestros psicólogos organizacionales se encargarán de <span style={{ color: "#00CFB4" }}>evaluar el perfil psicolaboral</span> de los profesionales analizando factores de:</div></div>
                     <div className='img_fila1_Evaluacion'></div>
                 </div>
             </div>
