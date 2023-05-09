@@ -70,8 +70,9 @@ const Contactanos = () => {
                 <div className='fila1_contactanos_texto NoirProBold'>Nos encanta saber de ti. Estaremos en contacto como  máximo al siguiente día hábil.</div>
                 <div>
 
-                <div className='fila1_contactanos_correo'>
+                
                     <form id="formContactanos" action="">
+                    <div className='fila1_contactanos_correo'>
                         <div className='fila1_contactanos_cover_input'>
                             <div className='fila1_contactanos_label'>Nombre</div>
                             <div>
@@ -122,9 +123,10 @@ const Contactanos = () => {
                         <div className='fila1_contactanos_cover_boton'>
                             <button id='send' onClick={handleSubmit} className='fila1_contactanos_botonCorreo NoirProRegular' variant="primary">Enviar</button>
                         </div>
+                        </div>
                         </form>
                         <div id='alert' className='NoirProBold' style={{color:"#fff", display:"none", fontSize:"20px"}}>Envio Exitoso</div>
-                    </div>
+                   
                 </div>
                 
 

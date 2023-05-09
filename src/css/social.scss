@@ -73,20 +73,19 @@
     margin-left: -200px;
 }
 .social_fila2_img2{
-    background-image: url(/src/assets/avion.svg);
+    background-image: url(/src/assets/coheteinclinado.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 340px;
     height: 250px;
-    background-position: center center;
-    margin-top: -480px;
+    margin-top: -130px;
     margin-right: -240px;
 }
 .social_fila2_text_1{
     max-width: 1000px;
     font-size: 40px;
     font-size: $font_size_30;
-    margin-top: 220px;
+   
 }
 
 /* fin fila 2 */
@@ -103,7 +102,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 0px;
-    margin-bottom: -120px;
+    margin-bottom: -150px;
     z-index: 1;
     position: relative;
 }
@@ -162,8 +161,8 @@
     background-size: contain;
     width: 220px;
     height: 250px;
-    margin-top: -50px;
-    margin-left: -200px;
+    margin-top: -90px;
+    margin-left: -120px;
 }
 .social_fila4_img2{
     background-image: url(/src/assets/avion.svg);
@@ -191,6 +190,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(/src/assets/fondosocial.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -30px;
 }
 .fila5_social_cuadro1{
     display: flex;
@@ -216,6 +220,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 15px;
 }
 .fila5_postulate_botonCorreo{
   
@@ -274,7 +279,7 @@
 .fila_6_social {
    
     display: flex;
-    background-image: url("../assets/fondocurva2.jpg");
+    background-image: url("../assets/curvaTransparente.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -282,7 +287,9 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #00CFB4;
+    margin-top: -10px;
+    z-index: 4;
+    position: relative;
 }
 .social_fila6_titulo{
     font-size: $font_size_50;
@@ -402,7 +409,8 @@
 @media (min-width: 1024px){
     .social_fila2_img2{
         width: 340px;
-    }
+        margin-right: -136px;
+       
     .social_fila6_img2{
         width: 340px;
     }
@@ -422,6 +430,8 @@
 @media (min-width: 1200px){
     .social_fila2_img2{
         width: 340px;
+        margin-right: -156px;
+    }
     }
     .social_fila6_img2{
         width: 340px;
@@ -437,5 +447,10 @@
     }
     .fila_2_social{
         background-size: cover;
+    }
+}
+@media (min-width: 1400px){
+    .social_fila2_img2{
+        margin-right: -186px;
     }
 }

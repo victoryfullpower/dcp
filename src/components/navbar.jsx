@@ -16,7 +16,7 @@ function header() {
             
           <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <img src={logo} width="208px" height="90px" />
+            <img src={logo} width="180px" height="90px" />
           </Navbar.Brand>
 
           <Navbar.Toggle className="coloring" />
@@ -35,7 +35,7 @@ function header() {
               <Nav.Link as={Link} to="/Social">DPC Social</Nav.Link>
               <Nav.Link as={Link} to="/Nosotros">Nosotros</Nav.Link>
              
-              <Button className='boton NoirProRegular' as={Link} to="/Contactanos" variant="primary">CONTÁCTANOS</Button>
+              <Button className='boton NoirProRegular' as={Link} to="/Contactanos" variant="primary">Contáctanos</Button>
             </Nav>
           </Navbar.Collapse>
           </Container>

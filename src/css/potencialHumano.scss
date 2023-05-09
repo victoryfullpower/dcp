@@ -47,7 +47,7 @@
     text-align: center;
     color: #fff;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 25px;
     padding: 5px;
 }
 
@@ -253,11 +253,13 @@
 .cuadros_fila3_PotencialH_img2{
     background-image: url('../assets/cohete.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 800px 441px;;
     background-position: center center;
-    width: 300px;
-    height: 500px;
+    width: 302px;
+    height: 450px;
     z-index: 3;
+    margin-top: 600px;
+    margin-right: -85px;
    
     margin-top: 600px;
 }
@@ -285,7 +287,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 20px;
+   
     flex-wrap: wrap;
 }
 .cuadros_fila3_PotencialH_img1{
@@ -319,7 +321,7 @@
     background-image: url('../assets/fondo_1.png');
     background-repeat: no-repeat;
     background-size: 120px 250px;
-    background-position: bottom right;
+    background-position:bottom -4px right -17px;
     position: relative
 }
 .cuadros_fila3_PotencialH_2{
@@ -328,7 +330,7 @@
     background-image: url('../assets/fondo_2.png');
     background-repeat: no-repeat;
     background-size: 150px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
     position: relative
 }
 .cuadros_fila3_PotencialH_3{
@@ -336,7 +338,7 @@
     background-image: url('../assets/fondo_3.png');
     background-repeat: no-repeat;
     background-size: 150px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
     position: relative
 }
 
@@ -435,7 +437,7 @@
     background-image: url('../assets/fondo_1.png');
     background-repeat: no-repeat;
     background-size: 120px 250px;
-    background-position: bottom right;
+    background-position: bottom 0px right -5px;
  }
  .cuadros_fila4_PotencialH_2{
     @include Funcuadros_fila4_PotencialH(310px,500px);
@@ -443,7 +445,7 @@
     background-image: url('../assets/fondo_2.png');
     background-repeat: no-repeat;
     background-size: 150px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -5px;
  }
  .cuadros_fila4_PotencialH_3{
     @include Funcuadros_fila4_PotencialH(310px,500px);
@@ -451,14 +453,14 @@
     background-image: url('../assets/fondo_3.png');
     background-repeat: no-repeat;
     background-size: 150px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
  }
  .cuadros_fila4_PotencialH_4{
     @include Funcuadros_fila4_PotencialH(310px,500px);
     background-image: url('../assets/fondo_4.png');
     background-repeat: no-repeat;
     background-size: 160px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -20px;
  }
  
  .cuadros_fila4_PotencialH_text{
@@ -606,8 +608,8 @@
     z-index: 5;
     background-image: url('../assets/fondoVerde_3.png');
     background-repeat: no-repeat;
-    background-size: 150px 250px;
-    background-position: bottom right;
+    background-size: 150px 220px;
+    background-position: bottom -4px right -20px;
  }
  .cuadros_fila5_PotencialH_2{
     @include Funcuadros_fila5_PotencialH(320px,350px);
@@ -624,8 +626,8 @@
     z-index: 1;
     background-image: url('../assets/fondoVerde_2.png');
     background-repeat: no-repeat;
-    background-size: 150px 250px;
-    background-position: bottom right;
+    background-size: 170px 220px;
+    background-position: bottom -4px right -20px;
  }
  .cuadros_fila5_PotencialH_4{
     @include Funcuadros_fila5_PotencialH(242px,350px);
@@ -644,7 +646,7 @@
     background-image: url('../assets/fondoVerde_4.png');
     background-repeat: no-repeat;
     background-size: 170px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -20px;
     
  }
 
@@ -781,11 +783,11 @@
 }
 @media (min-width: 1200px){
     .fila_3_PotencialH{
-        background-size: contain;
+        background-size: cover;
         margin-top: 0px;
     }
     .fila_4_PotencialH{
-        background-size: contain;
+        background-size: cover;
         margin-top: 0px;
     }
     .cuadros_fila5_PotencialH{

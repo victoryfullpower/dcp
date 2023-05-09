@@ -103,6 +103,9 @@
 .fila2_postulate_ul{
   
     list-style-image: url("../assets/bullet.svg");
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -110,6 +113,7 @@
     font-size: $font_size_25;
     color: #fff;
     max-width: 600px;
+    margin-right: 50px;
 }
 .fila2_postulate_listado{
     font-size: $font_size_23;
@@ -132,6 +136,7 @@
  flex-direction: column;
  padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 50px;
 }
 .fila3_postulate_titulo{
  font-size: $font_size_40;
@@ -139,12 +144,13 @@
  margin-left: 100px;
 }
 .fila3_postulate_img1{
-    background-image: url('../assets/plantita_postula.svg');
+    background-image: url('../assets/plantaDoble.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 150px;
+    margin-bottom: -150px;
     margin-left: 50px;
 
 }

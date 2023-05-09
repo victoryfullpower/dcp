@@ -116,7 +116,12 @@ const Recursos = () => {
 
                 <div className='fila2_recurso_text1'>
                     <div style={{ marginLeft: "60px" }}>VIDEOS</div>
-                    <div onClick={()=>handleclick('Recursolectura')}  className='fila2_recuerso_encuentraMas'>Encuentra más lecturas {"->"}</div>
+                    {
+                        lectura.length > 0?(
+                            <div onClick={()=>handleclick('Recursolectura')}  className='fila2_recuerso_encuentraMas'>Encuentra más lecturas {"->"}</div>
+                        ):''
+                    }
+                    
                 </div>
 
                
@@ -144,10 +149,20 @@ const Recursos = () => {
                 </div> 
                 <div className='fila2_recurso_text_arrow_center'>
                     <div className='fila2_recurso_text_arrow'>
-                        <div onClick={()=>handleclick('Recursovideo')} style={{ marginRight: "10px" }}>
-                            Encuentra más videos
-                        </div>
-                        <div className='fila2_recurso_arrow_cover'><div className='fila2_recurso_arrow'></div></div>
+                      
+                        {
+                            video.length > 0?(
+                                <div style={{display:"flex"}}>
+
+                                <div onClick={()=>handleclick('Recursovideo')} style={{ marginRight: "10px" }}>
+                                Encuentra más videos
+                                </div>
+                                <div className='fila2_recurso_arrow_cover'><div className='fila2_recurso_arrow'></div></div>
+                                </div>
+                            ):''
+                            
+                        }
+                     
 
 
                     </div>

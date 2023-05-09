@@ -115,7 +115,7 @@
     background-image: url('../assets/fondoVerde_1.png');
     background-repeat: no-repeat;
     background-size: 150px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
 
 }
 .cuadro2{
@@ -123,14 +123,14 @@
     background-image: url('../assets/fondoVerde_2.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
 }
 .cuadro3{
     @include cuadros(651px,300px);
     background-image: url('../assets/fondoVerde_3.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
 }
 .cuadro4{
     @include cuadros(482px,300px);
@@ -138,7 +138,7 @@
     background-image: url('../assets/fondoVerde_4.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
-    background-position: bottom right;
+    background-position: bottom -4px right -33px;
 
 }
 
@@ -174,21 +174,21 @@
     background-image: url('../assets/fondo_1.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;;
 }
 .caja2Metodologia{
     @include cajasMetodologia(280px,200px);
     background-image: url('../assets/fondo_2.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;;
 }
 .caja3Metodologia{
     @include cajasMetodologia(333px,245px);
     background-image: url('../assets/fondo_3.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;;
 }
 
 .caja6Metodologia{
@@ -196,21 +196,21 @@
     background-image: url('../assets/fondo_6.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;;
 }
 .caja5Metodologia{
     @include cajasMetodologia(280px,200px);
     background-image: url('../assets/fondo_5.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;;
 }
 .caja4Metodologia{
     @include cajasMetodologia(333px,245px);
     background-image: url('../assets/fondo_4.png');
     background-repeat: no-repeat;
     background-size: 100px 150px;
-    background-position: bottom right;
+    background-position:bottom -4px right -17px;;
 }
 .titulo_metodologia{
     font-size: $font_size_25;

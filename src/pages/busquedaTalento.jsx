@@ -127,7 +127,7 @@ const BusquedaTalento = () => {
             <div className="fila_2">
                 <div className='BloquePerfiles'>
 
-                    <div className='tituloPerfiles'>
+                    <div className='tituloPerfiles NoirProRegular'>
                         <div>Dentro de las diferentes industrias hemos reclutado los siguientes perfiles:</div>
                     </div>
 
@@ -148,18 +148,19 @@ const BusquedaTalento = () => {
 
                         <img src={chicoPerfil} className="cuadrosPerfile_8" />
                         <div className='cuadrosPerfile_7'><div>Gestores / Coordinadores</div></div>
-
-                    </div>
-                </div>
-                <div className='cuadrosPerfile_4_6'>
-                    <div className='cover_d-flex'>
-                        <div ><img src={imgOperaria} className="cuadrosPerfile_4 NoirProRegular" /></div>
+                        <div >
                         <div className='cuadrosPerfile_6'><div>Operarios</div></div>
+                        <img src={imgOperaria} className="cuadrosPerfile_4 NoirProRegular" />
+                       
+                        </div>
+                       
                     </div>
+                   
                 </div>
+               
             </div>
             <div className="fila3_busquedaTalento NoirProRegular">
-                <div className='fila3_buscatalento_titulo NoirProBold' style={{fontSize:"28px"}}>
+                <div className='fila3_buscatalento_titulo NoirProSemiBold' style={{fontSize:"28px"}}>
                     <div style={{ color: "#00CFB4" }}>Descubre los motivos para que</div><div style={{ color: "#000" }}><span style={{ color: "#00CFB4" }}>conversemos</span> sobre este servicio</div>
                 </div>
                 <div className='cuadros_fila2_busquedaTalento'>

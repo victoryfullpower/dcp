@@ -3,6 +3,12 @@ import { useState } from "react";
 import video from '../assets/social.mp4'
 
 const Social = () => {
+    const handleclick =()=> {
+        /* navigate(`/${url}`, { replace: false })
+        navigate(0) */
+       
+       window.open('https://api.whatsapp.com/send?phone=51988900839&text=Necesito%20mas%20info',"_blank");
+      }
     const [cantidad, setCantidad] = useState(0);
     const pagar = (e) => {
 
@@ -52,12 +58,16 @@ const Social = () => {
                 <div className='social_fila2_text NoirProRegular'>
 
                     <div>
+                        <div style={{display:"flex", justifyContent:"flex-end"}}>
+                        <div className='social_fila2_img2'></div>
+                        </div>
+                        
                         <div className='social_fila2_text_1'>
                             Cada miembro de nuestra organización reconoce que es imposible estar bien si alguien de nuestro entorno social no lo está. No somos ajenos a la realidad que pasan muchos niños con habilidades diferentes en nuestro país. Es por ello que como organización sumamos esfuerzos para accionar a favor de la inclusión e igualdad de oportunidades de manera que estos niños lleguen a ser independientes y puedan lograr sus sueños.
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div className='social_fila2_img1'></div>
-                            <div className='social_fila2_img2'></div>
+                            
                         </div>
 
                     </div>
@@ -72,11 +82,13 @@ const Social = () => {
 
             <div className="fila_4_social NoirProBold">
 
-                <div className='social_fila4_text NoirProRegular'>
+                <div className='social_fila4_text NoirProBold'>
 
                     <div>
                         <div className='social_fila4_text_1'>
-                            La meta de este 2023 es lograr proporcionarles a estos niños 1000 HORAS DE TERAPIA FÍSICA
+                           <div>La meta de este 2023</div>  
+                           <div>es lograr proporcionarles a estos niños</div> 
+                           <div>1000 HORAS DE TERAPIA FÍSICA</div>
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div className='social_fila4_img1'></div>
@@ -106,7 +118,7 @@ const Social = () => {
                     Estamos abiertos a generar un espacio one to one en  el cual te podamos contar sobre la estructura de esta bonita causa.
                 </div>
                 <div className='fila5_postulate_cover_boton'>
-                    <button className='fila5_postulate_botonCorreo NoirProBold' variant="primary">CONVERSEMOS</button>
+                    <button className='fila5_postulate_botonCorreo NoirProBold' onClick={handleclick} variant="primary">CONVERSEMOS</button>
                 </div>
             </div>
 

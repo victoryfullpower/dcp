@@ -1,4 +1,4 @@
-import imgbandera from '../assets/banderaclima.png';
+import imgbandera from '../assets/chicosbandera.svg';
 import estrechaManos from '../assets/estrecharManos.png';
 import '../css/climaOrganizacional.scss'
 const ClimaOrganizacional = () => {
@@ -126,7 +126,7 @@ const ClimaOrganizacional = () => {
                                 <div className='cuadro_cabecera_clima_6'>Participación voluntaria en el estudio de clima.</div>
                             </div>
                         </div>
-                        <div>
+                        <div className='imgbanderaclima'>
                             <img src={imgbandera} className="imagenBandera" />
                         </div>
                     </div>

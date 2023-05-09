@@ -33,11 +33,10 @@ const EvaluacionTalento = () => {
             </div>
             <div className="fila_3_Evaluacion NoirProRegular">
                 <div className='cab_fila3_Evaluacion_Texto_img'>
-                    <div className='fila3_Evaluacion_textcuadro'><div className='cuadros_fila3_Evaluacion_text NoirProBold'>Herramientas y metodologías <span style={{color:"#fff"}}>que utilizamos para la evaluación:</span></div></div>
+                    <div className='fila3_Evaluacion_textcuadro'><div className='cuadros_fila3_Evaluacion_text NoirProBold'><span>Herramientas y metodologías </span><span style={{color:"#fff"}}>que utilizamos para la evaluación:</span></div></div>
                     <div className='fila3_Evaluacion_imgcuadro'><div className='cuadros_fila3_Evaluacion_img1'></div></div>
                 </div>
                 <div className='cuadros_fila3_Evaluacion'>
-                    <div className='cuadros_fila3_Evaluacion_img2'></div>
                     <div className='cuadros_fila3_Evaluacion_1'>Test psicológicos</div>
                     <div className='cuadros_fila3_Evaluacion_2'>Assessment Center Gamificado</div>
                     <div className='cuadros_fila3_Evaluacion_3'>Entrevistas SMART</div>

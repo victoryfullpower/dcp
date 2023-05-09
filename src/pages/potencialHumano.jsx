@@ -98,7 +98,7 @@ const PotencialHumano = () => {
                                 <li>Gestión del cambio Comunicación</li>
                             </ul>
                         </div>
-                        <div id="potencial_textod11">
+                        <div id="potencial_textod11" style={{margin:"20px"}}>
                             Metodología andragógica
                         </div>
 

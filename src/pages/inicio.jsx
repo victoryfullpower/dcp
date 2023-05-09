@@ -28,7 +28,7 @@ const Inicio = () => {
                                 <p>Siempre tendrás un asociado especialista que lidere e impulse tu
                                     proyecto y esté dispuesto a guiarte de inicio a fin garantizando tu éxito.</p>
                             </div>
-                            <div className='conocemas NoirProLight'>Conoce más</div>
+                            <div className='conocemas NoirProLight'><span onClick={()=>handleclick("Metodologia")} style={{cursor:"pointer"}}>Conoce más</span></div>
                         </div>
                     </div>
                 </div>

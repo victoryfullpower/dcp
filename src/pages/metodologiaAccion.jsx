@@ -79,7 +79,7 @@ const Metodologia = () => {
                 
                     
                     <div className='listadoLogos'>
-                        <div className='organizacionalez NoirProRegular'>
+                        <div className='organizacionalez NoirProSemiBold'>
                             +5 AÑOS ACOMPAÑÁNDOLOS EN LOGRAR SUS OBJETIVOS ORGANIZACIONALES
                         </div> 
                         <div className='Logo1'>
