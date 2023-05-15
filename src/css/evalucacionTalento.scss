@@ -20,6 +20,9 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 999;
 }
 .texto_fila1_Evaluacionv1{
     max-width: 800px;
@@ -44,6 +47,8 @@
     justify-content: center;
     margin-top: 50px;
     margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
 }
 .cuadros_fila2_Evaluacion{
     display: flex;

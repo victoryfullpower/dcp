@@ -271,11 +271,10 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
   position: relative;
 }
 .cab_fila2_clima_2_img{
-
+    margin-top: 120px;
 }
 
 .cab_fila2_clima_2_img_img{
@@ -293,6 +292,7 @@
     flex-direction: column;
     align-items: end;
     gap: 20px;
+    margin-top: -230px;
 }
 
 .cab_fila2_clima_3_img_img{
@@ -308,32 +308,33 @@
     background-image: url('../assets/fondo_1.png');
     background-repeat: no-repeat;
     background-size: 120px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
     position: relative
 }
 .cab_fila2_clima_2{
-    @include fun_cuadros_fila2_clima(336px,443px);
+    @include fun_cuadros_fila2_clima(336px,420px);
     background-image: url('../assets/fondo_2.png');
     background-repeat: no-repeat;
     background-size: 170px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
     position: relative
 }
 .cab_fila2_clima_3{
-    @include fun_cuadros_fila2_clima(336px,502px);
+    @include fun_cuadros_fila2_clima(336px,460px);
     background-image: url('../assets/fondo_3.png');
     background-repeat: no-repeat;
     background-size: 170px 250px;
-    background-position: bottom right;
+    background-position: bottom -4px right -17px;
     position: relative
 }
 .cab_fila2_clima_4{
-    @include fun_cuadros_fila2_clima(336px,566px);
+    @include fun_cuadros_fila2_clima(336px,530px);
     background-image: url('../assets/fondo_4.png');
     background-repeat: no-repeat;
     background-size: 170px 250px;
-    background-position: bottom right;
-    position: relative
+    background-position: bottom -4px right -24px;
+    position: relative;
+    margin-top: -100px;
 }
 
 .fila_3_Clima

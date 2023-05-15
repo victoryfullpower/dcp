@@ -103,7 +103,7 @@ const ClimaOrganizacional = () => {
         <div className='container'>
             <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Clima organizacional</span></div>
             <div className="fila_1_Clima">
-                <div className='TituloPaginaClima NoirProRegular'>
+                <div className='TituloPaginaClima NoirProBold'>
                     CLIMA ORGANIZACIONAL
                 </div>
                 <div className="Bloque_Cabecera_Clima" >

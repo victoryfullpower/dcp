@@ -32,6 +32,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .clickSubtitulo {
@@ -43,8 +45,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
 .garantizamos {
@@ -67,6 +69,7 @@
     background-position: center center;
     width: 321px;
     height: 292px;
+    margin-left: -10px;
 }
 
 .Cuadros_Garantizamos {
@@ -110,7 +113,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 60px;
 }
 
@@ -124,6 +127,7 @@
 .SubTituloAsociadoEstrella{
     font-size: $font_size_27;
     margin-bottom: 50px;
+    margin-left: 20px;
 }
 
 .imagen_AsociadoEstrella {

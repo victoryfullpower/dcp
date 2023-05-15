@@ -4,8 +4,9 @@ import {useNavigate} from 'react-router-dom';
 function Footer() {
   const navigate = useNavigate();
   function handleclick(url) {
-    navigate(`/${url}`)
-    navigate(0)
+   
+    window.open(`/${url}`,"_self");
+  
   }
   function facebook(){
     window.open('https://www.facebook.com/people/DPC-Asociados/100077413660376/', '_blank');

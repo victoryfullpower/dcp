@@ -174,7 +174,7 @@ const Postulate = () => {
 
 
            <div className="fila_3_postulate">
-               <div className='fila3_postulate_titulo'>
+               <div className='fila3_postulate_titulo NoirProSemiBold'>
                    Te recomendamos contenido de nuestro Blog
                </div>
                <div className='fila3_postulate_cover_img_text'>
