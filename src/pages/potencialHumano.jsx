@@ -8,6 +8,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod1').style.transition = "opacity .5s"
         document.getElementById('potencial_textod1').style.fontSize = "18px"
         document.getElementById('idcab_fila2_potencial_d1').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_potencial_d1').style.backgroundPosition = "unset"
     }
     const mouseleave = () => {
         document.getElementById('idcab_fila2_potencial_d1').style.backgroundImage = "";
@@ -15,6 +16,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod11').style.opacity = "1"
         document.getElementById('potencial_textod11').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_potencial_d1').style.backgroundSize = "120px 250px"
+        document.getElementById('idcab_fila2_potencial_d1').style.backgroundPosition = "bottom -4px right -17px"
     }
     /* v1 */
 
@@ -26,6 +28,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod2').style.transition = "opacity .5s"
         document.getElementById('potencial_textod2').style.fontSize = "18px"
         document.getElementById('idcab_fila2_potencial_d2').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_potencial_d2').style.backgroundPosition = "unset"
     }
     const mouseleave2 = () => {
         document.getElementById('idcab_fila2_potencial_d2').style.backgroundImage = "";
@@ -33,6 +36,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod22').style.opacity = "1"
         document.getElementById('potencial_textod22').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_potencial_d2').style.backgroundSize = "150px 250px"
+        document.getElementById('idcab_fila2_potencial_d2').style.backgroundPosition = "bottom -4px right -17px"
     }
     /* v2*/
 
@@ -44,6 +48,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod3').style.transition = "opacity .5s"
         document.getElementById('potencial_textod3').style.fontSize = "18px"
         document.getElementById('idcab_fila2_potencial_d3').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_potencial_d3').style.backgroundPosition = "unset"
     }
     const mouseleave3 = () => {
         document.getElementById('idcab_fila2_potencial_d3').style.backgroundImage = "";
@@ -51,6 +56,7 @@ const PotencialHumano = () => {
         document.getElementById('potencial_textod33').style.opacity = "1"
         document.getElementById('potencial_textod33').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_potencial_d3').style.backgroundSize = "150px 250px"
+        document.getElementById('idcab_fila2_potencial_d3').style.backgroundPosition = "bottom -4px right -17px"
     }
     /* v3*/
     return (

@@ -6,7 +6,7 @@ const Social = () => {
     const handleclick =()=> {
         /* navigate(`/${url}`, { replace: false })
         navigate(0) */
-       
+       console.log("tea")
        window.open('https://api.whatsapp.com/send?phone=51988900839&text=Necesito%20mas%20info',"_blank");
       }
     const [cantidad, setCantidad] = useState(0);

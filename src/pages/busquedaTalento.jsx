@@ -105,7 +105,7 @@ const BusquedaTalento = () => {
                 </div>
 
                 <div className="Bloque_AsociadoEstrella" >
-                <div className='SubTituloAsociadoEstrella NoirProRegular' style={{width: "100%", marginLeft:"230px"}}>
+                <div className='SubTituloAsociadoEstrella NoirProRegular' style={{width: "100%"}}>
                         ¿Cómo evaluamos a tu Asociado estrella?
                         </div>
                     <div className='AsociadoEstrella' style={{position:"relative"}}>

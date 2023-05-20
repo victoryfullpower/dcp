@@ -5,13 +5,16 @@ const ClimaOrganizacional = () => {
     const mouseenter = () => {
         document.getElementById('idcab_fila2_clima_1').style.backgroundImage = "url(/src/assets/s1.png)";
         document.getElementById('clima_texto1').style.opacity = "1"
-        document.getElementById('clima_texto1').style.transition = "opacity .5s"
-        document.getElementById('idcab_fila2_clima_1').style.backgroundSize = "cover"
+        document.getElementById('clima_texto1').style.transition = "opacity .5s";
+        document.getElementById('idcab_fila2_clima_1').style.backgroundSize = "cover";
+        document.getElementById('idcab_fila2_clima_1').style.backgroundPosition = "unset"
+        
     }
     const mouseleave = () => {
         document.getElementById('idcab_fila2_clima_1').style.backgroundImage = "url(/src/assets/fondo_1.png)";
         document.getElementById('clima_texto1').style.opacity = "0"
         document.getElementById('idcab_fila2_clima_1').style.backgroundSize = "120px 250px"
+        document.getElementById('idcab_fila2_clima_1').style.backgroundPosition = "bottom -4px right -17px"
        
     }
     /* 1 */
@@ -20,11 +23,13 @@ const ClimaOrganizacional = () => {
         document.getElementById('clima_texto2').style.opacity = "1"
         document.getElementById('clima_texto2').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_clima_2').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_clima_2').style.backgroundPosition = "unset"
     }
     const mouseleave2 = () => {
         document.getElementById('idcab_fila2_clima_2').style.backgroundImage = "url(/src/assets/fondo_2.png)";
         document.getElementById('clima_texto2').style.opacity = "0"
         document.getElementById('idcab_fila2_clima_2').style.backgroundSize = "170px 250px"
+        document.getElementById('idcab_fila2_clima_2').style.backgroundPosition = "bottom -4px right -17px"
         
     }
     /* 2 */
@@ -33,11 +38,14 @@ const ClimaOrganizacional = () => {
         document.getElementById('clima_texto3').style.opacity = "1"
         document.getElementById('clima_texto3').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_clima_3').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_clima_3').style.backgroundPosition = "unset"
     }
     const mouseleave3 = () => {
         document.getElementById('idcab_fila2_clima_3').style.backgroundImage = "url(/src/assets/fondo_3.png)";
         document.getElementById('clima_texto3').style.opacity = "0"
         document.getElementById('idcab_fila2_clima_3').style.backgroundSize = "170px 250px"
+        document.getElementById('idcab_fila2_clima_3').style.backgroundPosition = "bottom -4px right -17px"
+        
     }
     /* 3 */
     const mouseenter4 = () => {
@@ -45,11 +53,13 @@ const ClimaOrganizacional = () => {
         document.getElementById('clima_texto4').style.opacity = "1"
         document.getElementById('clima_texto4').style.transition = "opacity .5s"
         document.getElementById('idcab_fila2_clima_4').style.backgroundSize = "cover"
+        document.getElementById('idcab_fila2_clima_4').style.backgroundPosition = "unset"
     }
     const mouseleave4 = () => {
         document.getElementById('idcab_fila2_clima_4').style.backgroundImage = "url(/src/assets/fondo_4.png)";
         document.getElementById('clima_texto4').style.opacity = "0"
         document.getElementById('idcab_fila2_clima_4').style.backgroundSize = "170px 250px"
+        document.getElementById('idcab_fila2_clima_4').style.backgroundPosition = "bottom -4px right -17px"
     }
     /* 4 */
 

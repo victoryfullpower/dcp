@@ -234,6 +234,8 @@
     margin-left: 30px;
     font-size: $font_size_15;
     padding: 15px;
+    z-index: 99;
+    position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -324,8 +326,8 @@
     width: 340px;
     height: 250px;
     background-position: center center;
-    margin-top: -280px;
-    margin-right: -299px;
+    margin-top: -303px;
+    margin-right: -309px;
 }
 .social_fila6_text_1{
     max-width: 1000px;

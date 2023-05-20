@@ -373,7 +373,9 @@
     height: 500px;
     z-index: 3;
     margin-right: -100px;
-    margin-top: 300px;
+    margin-top: 260px;
+    position: absolute;
+    left: -50px;
  }
  @mixin Funcuadros_fila4_PotencialH($width, $height) {
     display: flex;
@@ -584,7 +586,7 @@
     width: 320px;
     height: 328px;
     z-index: 3;
-    margin-left: -70px;
+    margin-left: -102px;
     margin-top: -40px;
  }
  
