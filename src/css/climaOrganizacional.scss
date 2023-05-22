@@ -139,109 +139,7 @@
     max-width: 700px;
     margin-left: 100px;
 }
-@media (max-width: 767px){
-    .imagenBandera{
-        width: 300px; 
-        height: 300px;
-        
-    }
-    .ListadoCuadros_cabecera_clima_1{
-        flex-direction: column;
-    }
-    .ListadoCuadros_cabecera_clima_2{
-        flex-direction: column;
-    }
-    .fila_2_Clima{
-        background-size: contain;
-    }
-    .cab_fila2_clima{
-        justify-content: center;
-    }
-    .cab_fila3_clima_1_img {
-        margin-top: 50px;
-    }
-    .cab_fila2_clima_text1{
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-    .imgbanderaclima{
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-}
-@media (min-width: 768px){
-    .imagenBandera{
-        width: 500px; 
-        height: 500px;
-        
-    }
-    .fila_2_Clima{
-        background-size: contain;
-    }
-    .cab_fila2_clima{
-        justify-content: center;
-    }
-    .cab_fila3_clima_1_img {
-        margin-top: 50px;
-    }
-    .cab_fila2_clima_text1{
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-    .imgbanderaclima{
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-}
-@media (min-width: 1024px){
-    .imagenBandera{
-        width: 900px; 
-        height: 900px;
-        
-    }
-    .fila_2_Clima{
-        background-size: contain;
-    }
-    .cab_fila2_clima{
-        justify-content: center;
-    }
-    .cab_fila3_clima_1_img {
-        margin-top: 180px;
-        margin-right: 30px;
-    }
-    .cab_fila2_clima_text1{
-        margin-left: 0px;
-        margin-bottom: 50px;
-    }
-    .imgbanderaclima{
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-}
-@media (min-width: 1400px){
-    .fila_2_Clima{
-        background-size: cover;
-    }
-    .cab_fila2_clima{
-        justify-content: flex-start;
-    }
-    .cab_fila2_clima_text1{
-        margin-left: 150px;
-        margin-bottom: 0px;
-    }
-    .imgbanderaclima{
-        margin-bottom: 0px;
-        margin-left: 0px;
-    }
-}
 
-@media (min-width: 1600px){
-    
-    .imgbanderaclima{
-        margin-bottom: -250px;
-        margin-left: -130px;
-    }
-}
 
 
 .cab_fila2_clima_img1{
@@ -325,7 +223,8 @@
     background-repeat: no-repeat;
     background-size: 170px 250px;
     background-position: bottom -4px right -17px;
-    position: relative
+    position: relative;
+    margin-bottom: 20px;
 }
 .cab_fila2_clima_4{
     @include fun_cuadros_fila2_clima(336px,530px);
@@ -335,6 +234,7 @@
     background-position: bottom -4px right -24px;
     position: relative;
     margin-top: -100px;
+    margin-bottom: 20px;
 }
 
 .fila_3_Clima
@@ -378,7 +278,7 @@
     gap: 10px;
     font-size: $font_size_27;
     color: #fff;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: -50px;
 }
 .cuadros_fila3_clima_v2{
@@ -390,6 +290,7 @@
     font-size: $font_size_27;
     color: #fff;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .cab_fila3_clima_1{
@@ -424,4 +325,124 @@
 }
 .cuadrosfila3Clima{
     margin: 0px 55px;
+}
+
+
+@media (max-width: 767px){
+    .imagenBandera{
+        width: 300px; 
+        height: 300px;
+        
+    }
+    .ListadoCuadros_cabecera_clima_1{
+        flex-direction: column;
+    }
+    .ListadoCuadros_cabecera_clima_2{
+        flex-direction: column;
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 50px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .imgbanderaclima{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .cab_fila2_clima_4{
+        margin-top: -50px;
+    }
+}
+@media (min-width: 768px){
+    .imagenBandera{
+        width: 500px; 
+        height: 500px;
+        
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 50px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .imgbanderaclima{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .cab_fila2_clima_4{
+        margin-top: -50px;
+    }
+}
+@media (min-width: 1024px){
+    .imagenBandera{
+        width: 900px; 
+        height: 900px;
+        
+    }
+    .fila_2_Clima{
+        background-size: contain;
+    }
+    .cab_fila2_clima{
+        justify-content: center;
+    }
+    .cab_fila3_clima_1_img {
+        margin-top: 180px;
+        margin-right: 30px;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .imgbanderaclima{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .cab_fila2_clima_4{
+        margin-top: -50px;
+    }
+}
+@media (min-width: 1400px){
+    .fila_2_Clima{
+        background-size: cover;
+    }
+    .cab_fila2_clima{
+        justify-content: flex-start;
+    }
+    .cab_fila2_clima_text1{
+        margin-left: 150px;
+        margin-bottom: 0px;
+    }
+    .imgbanderaclima{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .cab_fila2_clima_4{
+        margin-top: -100px;
+    }
+}
+
+@media (min-width: 1600px){
+    
+    .imgbanderaclima{
+        margin-bottom: -250px;
+        margin-left: -130px;
+    }
+    .cab_fila2_clima_4{
+        margin-top: -100px;
+    }
 }

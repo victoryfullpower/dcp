@@ -57,12 +57,13 @@ const Social = () => {
 
                 <div className='social_fila2_text NoirProRegular'>
 
-                    <div>
+                <div>
+                       
+                        
+                        <div className='social_fila2_text_1'>
                         <div style={{display:"flex", justifyContent:"flex-end"}}>
                         <div className='social_fila2_img2'></div>
                         </div>
-                        
-                        <div className='social_fila2_text_1'>
                             Cada miembro de nuestra organización reconoce que es imposible estar bien si alguien de nuestro entorno social no lo está. No somos ajenos a la realidad que pasan muchos niños con habilidades diferentes en nuestro país. Es por ello que como organización sumamos esfuerzos para accionar a favor de la inclusión e igualdad de oportunidades de manera que estos niños lleguen a ser independientes y puedan lograr sus sueños.
                         </div>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
