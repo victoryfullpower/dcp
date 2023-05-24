@@ -43,7 +43,7 @@ function header() {
        </div>
       </div>
 
-      <section>
+      <section className='container-body'>
         <Outlet>
 
 
