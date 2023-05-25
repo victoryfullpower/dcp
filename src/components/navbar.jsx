@@ -24,7 +24,7 @@ function header() {
             <Nav className='ms-auto'>
               <Nav.Link as={Link} to="/">Inicio</Nav.Link>
               <NavDropdown title="Especialidades" >
-                <NavDropdown.Item className='NoirProRegular' as={Link} to="/ClimaOrganizacional">DO: Clima Organizacional</NavDropdown.Item>
+                <NavDropdown.Item className='NoirProRegular' as={Link} to="/ClimaOrganizacional">DO: Clima organizacional</NavDropdown.Item>
                 <NavDropdown.Item className='NoirProRegular' as={Link} to="/PotencialHumano">Desarrollo del potencial humano</NavDropdown.Item>
                 <NavDropdown.Item className='NoirProRegular' as={Link} to="/BusquedaTalento">Búsqueda de talentos</NavDropdown.Item>
                 <NavDropdown.Item className='NoirProRegular' as={Link} to="/EvaluacionTalento">Evaluación de talentos</NavDropdown.Item>

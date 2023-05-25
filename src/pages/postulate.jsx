@@ -4,6 +4,8 @@ import Cardpostulante from '../components/cardpostulante.jsx';
 import Button from 'react-bootstrap/Button';
 import * as AWS from 'aws-sdk';
 import Correopostulante from '../components/correopostulante.jsx';
+import {useNavigate} from 'react-router-dom';
+
 AWS.config.update({
 
 
@@ -19,6 +21,12 @@ AWS.config.update({
 
 
 const Postulate = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
    var dato = [];
    var dynamodb = new AWS.DynamoDB();
    var docClient = new AWS.DynamoDB.DocumentClient();
@@ -40,7 +48,7 @@ const Postulate = () => {
 
 
                dato = data.Items
-               console.log(dato);
+               console.log("dato",dato);
                console.log("lengh", dato.length)
                setdatox(data.Items)
                console.log("datox", datox.length)
@@ -57,7 +65,7 @@ const Postulate = () => {
        setshowalltotal(true)
    }
    const clickFormCorreo = (skills, Posicion) => {
-       console.log("testing", skills)
+       console.log("testingxxx", skills)
        setshowcorreo(true)
        setdetalle(skills)
        setposiciondetalle(Posicion)
@@ -70,7 +78,7 @@ const Postulate = () => {
    }
    return (
        <div className='NoirProRegular'>
-           <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span onClick={volverPostulate} className={showcorreo ? ('miga_metodologia NoirProRegular') : 'miga_metodologia NoirProBold'}>Postúlate</span>{showcorreo ? (<span className='miga_metodologia NoirProRegular'> |</span>) : ''}{showcorreo ? (<span className={showcorreo ? ('miga_metodologia NoirProBold') : ''}> Aplicacion</span>) : ''}</div>
+           <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span onClick={volverPostulate} className={showcorreo ? ('miga_metodologia NoirProRegular') : 'miga_metodologia NoirProBold'}>Postúlate</span>{showcorreo ? (<span className='miga_metodologia NoirProRegular'> |</span>) : ''}{showcorreo ? (<span className={showcorreo ? ('miga_metodologia NoirProBold') : ''}> Aplicacion</span>) : ''}</div>
 
 
 
@@ -140,11 +148,11 @@ const Postulate = () => {
 
 
 
-
+               {console.log("Sfas",detalle)}
 
            {showcorreo ? (<Correopostulante
 
-
+               
                skills={detalle}
                postulacion={posiciondetalle}
            />) : ''

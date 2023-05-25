@@ -1,8 +1,16 @@
 import '../css/nosotros.scss'
+import {useNavigate} from 'react-router-dom';
+
 const Nosotros = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
     return (
         <div className='NoirProRegular'>
-            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Nosotros</span></div>
+            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Nosotros</span></div>
             <div className="fila_1_nosotros">
                 <div className='TituloPaginanosotros NoirProBold'>
                     Creamos experiencias que te permitirán llevar a tus equipos a un siguiente nivel

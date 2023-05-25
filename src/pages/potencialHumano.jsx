@@ -1,5 +1,13 @@
 import '../css/potencialHumano.scss'
+import {useNavigate} from 'react-router-dom';
+
 const PotencialHumano = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
     const mouseenter = () => {
         document.getElementById('idcab_fila2_potencial_d1').style.backgroundImage = "url(/src/assets/p1.png)";
 
@@ -62,7 +70,7 @@ const PotencialHumano = () => {
     return (
         <div className='NoirProRegular'>
 
-            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Desarrollo del potencial humano</span></div>
+            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Desarrollo del potencial humano</span></div>
             <div className="fila_1_PotencialH">
                 <div className='TituloPaginaPotencialH NoirProBold'>
                     DESARROLLO DE POTENCIAL HUMANO

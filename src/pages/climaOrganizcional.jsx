@@ -1,7 +1,15 @@
 import imgbandera from '../assets/chicosbandera.svg';
 import estrechaManos from '../assets/estrecharManos.png';
 import '../css/climaOrganizacional.scss'
+import {useNavigate} from 'react-router-dom';
+
 const ClimaOrganizacional = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
     const mouseenter = () => {
         document.getElementById('idcab_fila2_clima_1').style.backgroundImage = "url(/src/assets/s1.png)";
         document.getElementById('clima_texto1').style.opacity = "1"
@@ -111,7 +119,7 @@ const ClimaOrganizacional = () => {
     /* v3 */
     return (
         <div className='container'>
-            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Clima organizacional</span></div>
+            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Clima organizacional</span></div>
             <div className="fila_1_Clima">
                 <div className='TituloPaginaClima NoirProBold'>
                     CLIMA ORGANIZACIONAL

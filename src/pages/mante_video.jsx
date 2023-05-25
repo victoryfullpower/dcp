@@ -95,6 +95,43 @@ const Mante_video= () => {
             }
         });
     };
+
+    
+    const eliminar = (item) => {
+          let params = {
+            TableName: 'lecturaVideo',
+            Key:{
+                'Codigo':item.Codigo
+            },
+        }
+
+
+
+        var statusConfirm = confirm("¿Realmente desea eliminar esto?");
+        if (statusConfirm == true)
+        {
+            docClient.delete(params, function(err, data) {
+            
+                if (err) {
+                  console.log("Error", err);
+                } else {
+                  console.log("Success eliminado", data);
+                  onRead();
+                }
+              });
+    
+    
+        }
+        else
+        {
+           
+        }
+
+
+
+        
+          
+    }
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -228,6 +265,8 @@ const Mante_video= () => {
                                             <td>{value.Articulo.slice(0, 50)}</td>
                                             <td>{value.video.slice(0, 50)}</td>
                                             <td ><Button onClick={() => enviaritem(value)} variant="success">Editar</Button></td>
+                                            <td ><Button onClick={() => eliminar(value)} variant="success">Eliminar</Button></td>
+
                                         </tr>
                                     );
                                 })}

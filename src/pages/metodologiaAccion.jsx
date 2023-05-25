@@ -1,9 +1,17 @@
 import '../css/metodologia.scss'
+import {useNavigate} from 'react-router-dom';
+
 const Metodologia = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
     return (
         <div>
             <div className="main1">
-                <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Metodología de Acción</span></div>
+                <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Metodología de Acción</span></div>
 
                 <div className='container row1'>
                     <div className='Soluciones NoirProBold'>
@@ -23,10 +31,10 @@ const Metodologia = () => {
                             <div className='titulo_metodologia'>Nos ponemos al día</div><div className='cuerpo_metodologia'>Escuchamos tus necesidades para brindarte un servicio personalizado.</div>
                         </div>
                         <div className='cuadro2'>
-                            <div className='titulo_metodologia'>Atamos cabos</div><div className='cuerpo_metodologia'>Juntos definiremos objetivos para establecer un plan de acción a tu  medida.</div>
+                            <div className='titulo_metodologia2y3'>Atamos cabos</div><div className='cuerpo_metodologia'>Juntos definiremos objetivos para establecer un plan de acción a tu  medida.</div>
                         </div>
                         <div className='cuadro3'>
-                            <div className='titulo_metodologia'>Nos ponemos en marcha</div><div className='cuerpo_metodologia'>Desplegaremos soluciones personalizadas para ti y tu equipo. Además te mantendremos informado en todo el proceso. </div>
+                            <div className='titulo_metodologia2y3'>Nos ponemos en marcha</div><div className='cuerpo_metodologia'>Desplegaremos soluciones personalizadas para ti y tu equipo. Además te mantendremos informado en todo el proceso. </div>
                         </div>
                         <div className='cuadro4'>
                             <div className='titulo_metodologia'>Mostramos resultados obtenidos</div><div className='cuerpo_metodologia'>Procesamos la información y te brindamos un informe integral con propuesta de mejora y plan de acción.</div>

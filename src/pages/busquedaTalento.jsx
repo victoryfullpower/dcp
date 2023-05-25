@@ -4,8 +4,15 @@ import imgOperaria from '../assets/chicaPerfil.png'
 import chicoPerfil from '../assets/chicoPerfil.png'
 import chicapc from '../assets/chica_pc.svg'
 import cohete_talento from '../assets/cohete_talento.svg'
+import {useNavigate} from 'react-router-dom';
 
 const BusquedaTalento = () => {
+    const navigate = useNavigate();
+    const volverHome=()=>{
+
+      navigate(`/`)
+     
+    }
     const mouseenter = ()=>{
         document.getElementById('talento_img1').style.backgroundImage = "url(/src/assets/t1.png)";
         document.getElementById('talento_texto1').style.opacity = "1"
@@ -70,7 +77,7 @@ const BusquedaTalento = () => {
     /* 5 */
     return (
         <div className='container'>
-            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Búsqueda de talentos</span></div>
+            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>Búsqueda de talentos</span></div>
 
             <div className="fila_1">
 

@@ -26,7 +26,7 @@ const Mante_postulate= () => {
     const [Modalidad, setModalidad] = useState('')
     const [Pais, setPais] = useState('')
     const [Posicion, setPosicion] = useState('')
-    const [skills, setskills] = useState([])
+    const [skills, setskills] = useState('')
    
     const [item, setitem] = useState([])
    
@@ -73,6 +73,36 @@ const Mante_postulate= () => {
         setskills(item.skills);
         console.log('skills', item.skills)
     }
+    const eliminar = (item) => {
+
+          let params = {
+            TableName: 'Postulate_Table',
+            Key:{
+                'CodigoPostulate':item.CodigoPostulate
+            },
+        }
+            var statusConfirm = confirm("¿Realmente desea eliminar esto?");
+            if (statusConfirm == true)
+            {
+                docClient.delete(params, function(err, data) {
+            
+                    if (err) {
+                      console.log("Error", err);
+                    } else {
+                      console.log("Success eliminado", data);
+                      onRead();
+                    }
+                  });
+            }
+            else
+            {
+               
+            }
+       
+
+
+          
+    }
     const getCodigoPostulate = (e) => {
         setCodigoPostulate(e.target.value);
         console.log("codigo", CodigoPostulate)
@@ -106,7 +136,7 @@ const Mante_postulate= () => {
             Modalidad: Modalidad,
             Pais: Pais,
             Posicion: Posicion,
-            skills: [skills],
+            skills: skills,
         }
 
         let params = {
@@ -138,7 +168,7 @@ const Mante_postulate= () => {
         setModalidad('');
         setPais('');
         setPosicion('');
-        setskills([]);
+        setskills('');
     }
     const nuevoRegistro = () => {
         reset();
@@ -180,6 +210,7 @@ const Mante_postulate= () => {
                                             <td>{value.Posicion}</td>
                                             <td>{value.skills}</td>
                                             <td ><Button onClick={() => enviaritem(value)} variant="success">Editar</Button></td>
+                                            <td ><Button onClick={() => eliminar(value)} variant="success">Eliminar</Button></td>
                                         </tr>
                                     );
                                 })}

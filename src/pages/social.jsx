@@ -1,13 +1,19 @@
 import '../css/social.scss'
 import { useState } from "react";
 import video from '../assets/social.mp4'
-
+import {useNavigate} from 'react-router-dom';
 const Social = () => {
     const handleclick =()=> {
         /* navigate(`/${url}`, { replace: false })
         navigate(0) */
        console.log("tea")
        window.open('https://api.whatsapp.com/send?phone=51988900839&text=Necesito%20mas%20info',"_blank");
+      }
+      const navigate = useNavigate();
+      const volverHome=()=>{
+  
+        navigate(`/`)
+       
       }
     const [cantidad, setCantidad] = useState(0);
     const pagar = (e) => {
@@ -43,7 +49,7 @@ const Social = () => {
     }
     return (
         <div className='NoirProRegular'>
-            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>DPC Social</span></div>
+            <div style={{ marginTop: '20px', marginLeft: '20px' }}><span onClick={volverHome} className='home_medologia NoirProRegular'>{"<-"} Home | </span><span className='miga_metodologia NoirProBold'>DPC Social</span></div>
             <div className="fila_1_social">
                 <div className='fila1_social_titulo NoirProBold'>
                     Acciones que generan cambios reales

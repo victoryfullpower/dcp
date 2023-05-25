@@ -110,7 +110,7 @@
     
 }
 .cuadro1{
-    @include cuadros(482px,300px);
+    @include cuadros(378px,300px);
     
     background-image: url('../assets/fondoVerde_1.png');
     background-repeat: no-repeat;
@@ -119,21 +119,21 @@
 
 }
 .cuadro2{
-    @include cuadros(651px,300px);
+    @include cuadros(517px,300px);
     background-image: url('../assets/fondoVerde_2.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
     background-position: bottom -4px right -17px;
 }
 .cuadro3{
-    @include cuadros(651px,300px);
+    @include cuadros(517px,300px);
     background-image: url('../assets/fondoVerde_3.png');
     background-repeat: no-repeat;
     background-size: 200px 280px;
     background-position: bottom -4px right -17px;
 }
 .cuadro4{
-    @include cuadros(482px,300px);
+    @include cuadros(378px,300px);
     
     background-image: url('../assets/fondoVerde_4.png');
     background-repeat: no-repeat;
@@ -215,7 +215,13 @@
 .titulo_metodologia{
     font-size: $font_size_25;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 33px;
+    text-align: center;
+}
+.titulo_metodologia2y3{
+    font-size: $font_size_25;
+    margin-bottom: 20px;
+    margin-top: 68px;
     text-align: center;
 }
 .cuerpo_metodologia{

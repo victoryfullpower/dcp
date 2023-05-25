@@ -2,15 +2,16 @@ import "../css/postulate.scss";
 import React, { useState, useEffect } from 'react';
 
 function Correopostulante({postulacion,skills}){
+    console.log("arreglo",skills)
     var archivo2 = "";
     var fileNamev2 = "";
     var correo = "";
     var telefono = "";
     var arreglo = "";
     var arreglo2 = [];
-    arreglo = skills[0][0][0];
+    arreglo = skills;
     arreglo2 = arreglo.split(",")
-    console.log("arreglo2", skills[0][0][0])
+    console.log("arreglo2", skills)
     const [base64, setBase64] = useState('');
     const [fileName, setfileName] = useState('');
     const openFile = (e) => {
