@@ -17,10 +17,10 @@ function Footer() {
 
   return (
     
-      <div>
-        <div className="footer NoirProRegular">
+      <div className="container-footer">
+        <div className="footer NoirProRegular row">
           {/* Column1 */}
-          <div className="footercolum">
+          <div className="col-6 col-md-4 col-xl-3">
             <div>CONTÁCTANOS</div>
             <ul className="list-unstyled">
               <li className="colorVerde">Correo: juntoshacemosladiferencia@dpc.pe</li>
@@ -29,7 +29,7 @@ function Footer() {
             </ul>
           </div>
           {/* Column2 */}
-          <div className="footercolum">
+          <div className="col-6 col-md-2 col-xl-2">
             <div>EMPRESA</div>
             <ul className="list-unstyled vinculofooter">
               <li onClick={()=>{handleclick('Nosotros')}}>Nosotros</li>
@@ -38,7 +38,7 @@ function Footer() {
             </ul>
           </div>
           {/* Column3 */}
-          <div className="footercolum">
+          <div className="col-6 col-md-2 col-xl-3">
             <div>ESPECIALIDADES</div>
             <ul className="list-unstyled vinculofooter">
               <li onClick={()=>{handleclick('ClimaOrganizacional')}}>Desarrollo organizacional</li>
@@ -48,14 +48,14 @@ function Footer() {
             </ul>
           </div>
           {/* Column4 */}
-          <div className="footercolum">
+          <div className="col-6 col-md-2 col-xl-2">
             <div>METODOLOGÍA DE ACCIÓN</div>
             <ul className="list-unstyled vinculofooter">
               <li onClick={()=>{handleclick('Metodologia')}} className="colorVerde">Cuatro grandes fases</li>
             </ul>
           </div>
           {/* Column5 */}
-          <div className="footercolum">
+          <div className="col-6 col-md-2 col-xl-2">
             <div>DPC SOCIAL</div>
             <ul className="list-unstyled vinculofooter">
               <li onClick={()=>{handleclick('Social')}} className="colorVerde">Generamos impacto social</li>

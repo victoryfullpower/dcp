@@ -1,28 +1,30 @@
+@import "../_general.scss";
+.vinculofooter {
+  cursor: pointer;
+}
+.colorVerde {
+  color: #00cfb4;
+  word-wrap: break-word;
+}
+.redes {
+  display: flex;
+  gap: 1rem;
+}
+.container-footer {
+  padding: 2.2rem 1.3rem;
+  border-top: 0.15rem solid #00cfb4;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: $font_size;
 
-  @import '../_general.scss';
-  .vinculofooter{
-    cursor: pointer;
+  word-wrap: break-word;
+}
+@media (max-width: 1200px) {
+  .footer {
+    font-size: $font_size_xl_16;
   }
-  .colorVerde{
-    color: #00CFB4;
-  }
-  .redes{
-    display:flex;
-    gap: 1rem;
-  }
-  
-  .footer{
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-items:baseline;
-    font-size: $font_size;
-    border-top: 0.15rem solid #00CFB4;
-
-  }
-  .footercolum{
-    display: flex;
-    flex-direction: column;
-  }
+}

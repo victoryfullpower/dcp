@@ -1,184 +1,229 @@
-@import '../_general.scss';
-.inicio{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+@import "../_general.scss";
+.inicio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-.fila1_inicio_video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fila1_inicio_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: #00cfb4;
+}
+.primerCuadro {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 4px;
+  // max-width: 878px;
+  // margin-left: 143px;
+}
+.titulo {
+  font-size: $font_size_60;
+  display: flex;
+  flex-direction: column;
+  max-width: 753px;
+  margin-top: 130px;
+}
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  font-size: $font_size_40;
+  margin-top: 22px;
+}
+.conocemas {
+  font-size: $font_size_18;
+  margin-top: 20px;
+  padding-left: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+.contenedor_primerCuadro {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #fefefe;
+  min-height: 800px;
+  position: relative;
+}
+.contenedor_primerCuadro::before {
+  content: "";
+  background-image: url("../assets/ilustracion_inicio_woman.png");
+  background-size: 902px 850px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  background-position: center top;
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.titulo_segundoCuadro {
+  max-width: 1423px;
+  font-size: $font_size_60;
+  color: #fff8f8;
+  height: 55rem;
+  display: flex;
+  align-items: center;
+}
+.contenedor_segundoCuadro {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #00cfb4;
+  min-height: 880px;
+  background: #00cfb4;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+}
+.contenedor_segundoCuadro::before {
+  content: "";
+  background-image: url("../assets/fondo_2_inicio.jpeg");
+  background-size: 1716px 912px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.contenedor_tercerCuadro {
+  background-color: #f8fbfa;
+  min-height: 727px;
+}
+.contentDescrp {
+  max-width: 878px;
+  margin-left: 143px;
+}
+.contentDescrp2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+}
+.contentDescrp3 {
+  display: flex;
+  margin-bottom: 20px;
+  width: calc(100% - 15rem);
+  margin-left: 8.5rem;
+  margin-right: 6.5rem;
+  gap: 2.5rem;
+}
+.titulo_tercerCuadro {
+  color: #000000;
+  font-size: $font_size_60;
+  max-width: 42.43rem;
+  margin-top: 120px;
+  line-height: 120%;
+}
+@mixin cuadroInicio($height, $width) {
+  display: flex;
+  flex-direction: column;
+  width: $width;
+  height: $width;
+  background-color: #00cfb4;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.ListadoCuadros {
+  display: flex;
+  flex-direction: row;
+  margin-top: 120px;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+}
+.cabCuadro {
+  color: #ffffff;
+  font-size: $font_size_30;
+}
+.redmore {
+  color: #000000;
+  font-size: $font_size_18;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cuadroInicio1 {
+  @include cuadroInicio(193px, 13rem);
+}
+.cuadroInicio2 {
+  @include cuadroInicio(252px, 16rem);
+}
+.container_descrp3 {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .titulo_tercerCuadro {
+    width: 40%;
+  }
+  .titulo,
+  .titulo_segundoCuadro,
+  .titulo_tercerCuadro {
+    font-size: $font_size_xl_48;
+  }
+  .cuerpo {
+    font-size: $font_size_xl_32;
+  }
+  .contentDescrp2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .contentDescrp {
+    margin-left: 10%;
+  }
+  .contentDescrp3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .cuadroInicio1 {
     width: auto;
-    height: auto;
-    background-color: #00CFB4;
+    max-width: 13rem;
+    padding: 0 1.5rem;
+  }
+  .cabCuadro {
+    font-size: 100%;
+  }
+  .redmore {
+    font-size: 80%;
+  }
+  .cuadroInicio2 {
+    width: auto;
+    max-width: 16rem;
+    padding: 0 1.5rem;
+  }
 }
-.primerCuadro{
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 4px;
-    // max-width: 878px;
-    // margin-left: 143px;
-
-
-
-}
-.titulo{
-    font-size: $font_size_60;
-    display: flex;
-    flex-direction: column;
-    max-width: 753px;
-    margin-top: 130px;
-
-
-}
-.cuerpo{
-    display: flex;
-    flex-direction: column;
-    font-size: $font_size_40;
-    margin-top: 22px;
-}
-.conocemas{
-    font-size: $font_size_18;
-    margin-top: 20px;
-    padding-left: 50px;
-    text-decoration: underline;
-    cursor: pointer;
-    z-index: 999;
-    position: relative;
-}
-.contenedor_primerCuadro{
-    border-radius: 20px 20px 0px 0px;
-    background-color: #FEFEFE;
-    min-height: 800px;
-    position: relative;
-    
-   
-}
-.contenedor_primerCuadro::before {    
-    content: "";
-    background-image: url("../assets/ilustracion_inicio_woman.png");
-    background-size: 902px 850px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.10;
-    background-position: center top;
-    background-repeat: no-repeat; /* Do not repeat the image */
-}
-
-
-.titulo_segundoCuadro{
-    max-width: 1423px;
-    font-size: $font_size_60;
-    color: #FFF8F8;
-    margin-top: 270px;
-}
-.contenedor_segundoCuadro{
-    border-radius: 20px 20px 20px 20px;
-    background-color: #00CFB4;
-    min-height: 880px;
-    position: relative;
-}
-.contenedor_segundoCuadro::before {    
-    content: "";
-    background-image: url("../assets/fondo_2_inicio.jpeg");
-    background-size: 1716px 912px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.10;
-    background-position: center top;
-    background-repeat: no-repeat;
-    
-}
-.contenedor_tercerCuadro{
-    background-color: #F8FBFA;
-    min-height: 727px;
-    position: relative;
-}
-.contentDescrp{
-    max-width: 878px;
-    margin-left: 143px;
-}
-.contentDescrp2{
-    max-width: 1423px;
-    margin-left: 143px;
-}
-.contentDescrp3{
-    max-width: 1423px;
-    margin-left: 143px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-.titulo_tercerCuadro{
-    color: #000000;
-    font-size: $font_size_60;
-    max-width: 679px;
-    margin-top: 120px;
-}
-@mixin cuadroInicio($height,$width) {
-    display: flex;
-    flex-direction:column;
-    width: $width;
-    height: $width;
-    background-color: #00CFB4;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.ListadoCuadros{
-    display: flex;
-    flex-direction:row;
-    margin-top: 120px;
-    flex-wrap: wrap;
-    gap: 22px;
-    align-items: center;
-    justify-content: center;
-
-}
-.cabCuadro{
-    color: #FFFFFF;
-    font-size: $font_size_30
-}
-.redmore{
-    color:#000000;
-    font-size: $font_size_18;
-    text-decoration: underline;
-    cursor: pointer;
-}
-.cuadroInicio1{
-    @include cuadroInicio(193px,212px);
-    
-}
-.cuadroInicio2{
-    @include cuadroInicio(252px,268px);
-}
-
-@media (max-width: 992px){
-    .contentDescrp{
-        margin-left: 0px;
-    }
-    .contentDescrp2{
-        margin-left: 0px;
-    }
-    .contentDescrp3{
-        margin-left: 0px;
-    }
-    .titulo{
-        font-size: $font_size_30;
-    }
-    .cuerpo{
-        font-size: $font_size;
-    }
-    .titulo_segundoCuadro{
-        font-size: $font_size_30;
-    }
-
-   
+@media (max-width: 767px) {
+  .titulo,
+  .titulo_segundoCuadro,
+  .titulo_tercerCuadro {
+    font-size: $font_size_xl_32;
+  }
+  .cuerpo {
+    font-size: $font_size_xl_24;
+  }
+  .contentDescrp {
+    margin-left: 0px;
+  }
+  .container_descrp3,
+  .contentDescrp3 {
+    display: block;
+  }
+  .contentDescrp3 {
+    width: calc(100% - 4rem);
+  }
+  .titulo_tercerCuadro {
+    width: 100%;
+  }
+  .cuadroInicio1 {
+    max-width: 6rem;
+  }
 }
